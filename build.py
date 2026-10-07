@@ -196,7 +196,7 @@ def page(t):
     mail = "mailto:noam@meetek.ai?subject=" + quote_(t["k_mail_subj"])
     jmail = "mailto:noam@meetek.ai?subject=" + quote_(t["j_subj"])
     return f'''<!doctype html>
-<html lang="{t["lang"]}" dir="{t["dir"]}">
+<html lang="{t["lang"]}" dir="{t["dir"]}" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -207,14 +207,14 @@ def page(t):
 <meta property="og:type" content="website">
 <meta property="og:url" content="{t["url"]}">
 <meta property="og:locale" content="{t["og_locale"]}">
-<meta name="theme-color" content="#2F5BEA">
+<meta name="theme-color" content="#0A1020">
 <link rel="alternate" hreflang="{t["alt_lang"]}" href="{t["alt_href"]}">
 <link rel="icon" href="{b}favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{b}styles.css">
-<script>try{{if(localStorage.getItem('meetek-theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}}catch(e){{}}</script>
+<script>try{{if(localStorage.getItem('meetek-theme')==='light')document.documentElement.removeAttribute('data-theme')}}catch(e){{}}</script>
 </head>
 <body class="no-js">
 <div class="page-bg" aria-hidden="true"></div>

@@ -2,7 +2,7 @@ document.body.classList.remove('no-js');
 var yEl = document.getElementById('y');
 if (yEl) yEl.textContent = new Date().getFullYear();
 
-// theme toggle (light by default, remembered per visitor)
+// theme toggle (dark by default, remembered per visitor)
 var root = document.documentElement;
 function setTheme(t) {
   if (t === 'dark') root.setAttribute('data-theme', 'dark'); else root.removeAttribute('data-theme');
