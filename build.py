@@ -207,9 +207,19 @@ def page(t):
 <meta property="og:type" content="website">
 <meta property="og:url" content="{t["url"]}">
 <meta property="og:locale" content="{t["og_locale"]}">
+<meta property="og:site_name" content="Meetek">
+<meta property="og:image" content="https://meetek.ai/og.png">
+<meta property="og:image:secure_url" content="https://meetek.ai/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Meetek">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://meetek.ai/og.png">
 <meta name="theme-color" content="#0A1020">
 <link rel="alternate" hreflang="{t["alt_lang"]}" href="{t["alt_href"]}">
 <link rel="icon" href="{b}favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{b}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
