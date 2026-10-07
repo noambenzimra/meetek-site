@@ -43,7 +43,8 @@ HE = dict(
  lang="he", dir="rtl", base="", other="en/", other_label="EN", other_lang="en",
  title="Meetek | הטמעת AI בחברות הנדסה, ביצוע ותשתיות",
  desc="Meetek מציבה בחברה שלכם סטודנט מצטיין להנדסה מהטכניון, 3 ימים בשבוע, שמוצא איפה הולכות השעות ובונה את הכלים שמחזירים לכם אותן.",
- og_title="Meetek | AI שעובד אצלכם במשרד", og_locale="he_IL", url="https://meetek.ai/", alt_href="https://meetek.ai/en/", alt_lang="en",
+ og_title="כמה שעות בשבוע הולכות אצלכם על עבודה ידנית?",
+ og_desc="סטודנט מצטיין מהטכניון יושב אצלכם 3 ימים בשבוע ומטמיע בינה מלאכותית בעבודה האמיתית. פגישת היכרות ללא עלות.", og_locale="he_IL", url="https://meetek.ai/", alt_href="https://meetek.ai/en/", alt_lang="en",
  skip="דילוג לתוכן", home="Meetek, לראש העמוד", nav_label="ניווט ראשי",
  nav=[("#work","על מה עובדים"),("#how","איך זה עובד"),("#students","הסטודנטים"),("#faq","שאלות נפוצות")],
  theme_label="מצב כהה או בהיר", cta_nav="לתיאום פגישה",
@@ -111,7 +112,8 @@ EN = dict(
  lang="en", dir="ltr", base="../", other="../", other_label="עב", other_lang="he",
  title="Meetek | AI implementation for engineering, construction and infrastructure firms",
  desc="Meetek places a top Technion engineering student in your company, 3 days a week, to find where the hours go and build the tools that give them back.",
- og_title="Meetek | AI that works in your office", og_locale="en_US", url="https://meetek.ai/en/", alt_href="https://meetek.ai/", alt_lang="he",
+ og_title="How many hours a week go to manual work?",
+ og_desc="A top Technion engineering student sits in your office 3 days a week and puts AI to work in your real processes. Free intro meeting.", og_locale="en_US", url="https://meetek.ai/en/", alt_href="https://meetek.ai/", alt_lang="he",
  skip="Skip to content", home="Meetek, back to top", nav_label="Main",
  nav=[("#work","What we do"),("#how","How it works"),("#students","Our students"),("#faq","FAQ")],
  theme_label="Toggle dark or light mode", cta_nav="Book a meeting",
@@ -203,7 +205,9 @@ def page(t):
 <title>{t["title"]}</title>
 <meta name="description" content="{t["desc"]}">
 <meta property="og:title" content="{t["og_title"]}">
-<meta property="og:description" content="{t["desc"]}">
+<meta property="og:description" content="{t["og_desc"]}">
+<meta name="twitter:title" content="{t["og_title"]}">
+<meta name="twitter:description" content="{t["og_desc"]}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{t["url"]}">
 <meta property="og:locale" content="{t["og_locale"]}">
