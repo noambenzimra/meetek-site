@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl" data-theme="dark">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Meetek | הטמעת AI בחברות הנדסה, ביצוע ותשתיות</title>
 <meta name="description" content="Meetek מציבה בחברה שלכם סטודנט מצטיין להנדסה מהטכניון, 3 ימים בשבוע, שמוצא איפה הולכות השעות ובונה את הכלים שמחזירים לכם אותן.">
 <meta property="og:title" content="כמה שעות בשבוע הולכות אצלכם על עבודה ידנית?">
@@ -21,28 +21,24 @@
 <meta property="og:image:alt" content="Meetek">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://meetek.ai/og.png">
-<meta name="theme-color" content="#0A1020">
+<meta name="theme-color" content="#000000">
 <link rel="alternate" hreflang="en" href="https://meetek.ai/en/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script>try{if(localStorage.getItem('meetek-theme')==='light')document.documentElement.removeAttribute('data-theme')}catch(e){}</script>
 </head>
 <body class="no-js">
-<div class="page-bg" aria-hidden="true"></div>
 <a class="skip" href="#main">דילוג לתוכן</a>
 
-<header class="site" id="top">
-  <div class="nav">
-    <a class="brand" href="#top" aria-label="Meetek, לראש העמוד"><svg width="34" height="24" viewBox="0 0 30 22" aria-hidden="true"><circle class="c1" cx="10" cy="11" r="8.6" fill="none" stroke-width="2.6"/><circle class="c2" cx="20" cy="11" r="8.6" fill="none" stroke-width="2.6"/></svg>Meetek</a>
-    <nav class="nav-links" aria-label="ניווט ראשי"><a href="#work">על מה עובדים</a><a href="#how">איך זה עובד</a><a href="#students">הסטודנטים</a><a href="#faq">שאלות נפוצות</a></nav>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Meetek, לראש העמוד"><svg width="30" height="21" viewBox="0 0 30 22" aria-hidden="true"><circle class="c1" cx="10" cy="11" r="8.6" fill="none" stroke-width="2.4"/><circle class="c2" cx="20" cy="11" r="8.6" fill="none" stroke-width="2.4"/></svg>Meetek</a>
+    <nav class="nav-links" aria-label="ניווט ראשי"><a href="#compare">לפני ואחרי</a><a href="#work">על מה עובדים</a><a href="#how">איך זה עובד</a><a href="#students">הסטודנטים</a><a href="#faq">שאלות</a></nav>
     <div class="nav-end">
-      <a class="icon-btn" href="en/" lang="en" hreflang="en">EN</a>
-      <button class="icon-btn theme" type="button" aria-label="מצב כהה או בהיר"><span class="moon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span><span class="sun"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span></button>
-      <a class="btn btn-primary" href="#contact">לתיאום פגישה</a>
+      <a class="icon-btn" href="en/" hreflang="en">EN</a>
+      <button class="icon-btn theme" type="button" aria-label="מצב כהה או בהיר"><span class="moon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span><span class="sun"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span></button>
+      <a class="btn btn-primary" href="#contact">קביעת פגישה</a>
     </div>
   </div>
 </header>
@@ -50,148 +46,142 @@
 <main id="main">
 
 <section class="hero">
-  <span class="float-ic a"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a3 3 0 0 0-3-1z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg></span>
-  <span class="float-ic b"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1 1-1.5 4-1.5 4s3-.5 4-1.5"/><path d="M9 15l-3-3c1-4 5-9 12-9 0 7-5 11-9 12z"/><circle cx="14.5" cy="9.5" r="1.5"/></svg></span>
-  <span class="float-ic c"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
-  <div class="wrap center">
+  <div class="wrap">
     <div class="reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>סטודנטים מצטיינים מהטכניון, רק 1 מכל 10 מתקבל</span>
-      <h1>AI שעובד אצלכם במשרד.<br><span class="grad-text">לא רק במצגת.</span></h1>
-      <p class="lead">Meetek מציבה בחברה שלכם סטודנט מצטיין להנדסה מהטכניון, 3 ימים בשבוע. הוא לומד איך העבודה נעשית היום, מוצא איפה הולכות השעות, ובונה את הכלים שמחזירים לכם אותן.</p>
+      <h1 class="display">AI שעובד אצלכם במשרד.<br><span class="second">לא רק במצגת.</span></h1>
+      <p class="lede">סטודנט מצטיין להנדסה מהטכניון יושב אצלכם <b>3 ימים בשבוע</b>, לומד איך העבודה נעשית היום, ובונה את הכלים שמחזירים לכם את השעות.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="#contact">לפגישת היכרות של חצי שעה<span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="btn btn-ghost" href="#how">איך זה עובד</a>
+        <a class="btn btn-primary" href="#contact">לפגישת היכרות</a>
+        <a class="link" href="#how">איך זה עובד<span class="chev" aria-hidden="true">›</span></a>
       </div>
     </div>
-    <div class="stats"><div class="stat reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 4.5a3 3 0 0 1 0 6M18 14a5.5 5.5 0 0 1 3 6"/></svg></div><b>1:10</b><span>רק אחד מכל עשרה מועמדים מתקבל</span></div><div class="stat reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><b>3</b><span>ימים בשבוע אצלכם במשרד</span></div><div class="stat reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><b>0</b><span>התחייבות להעסקה</span></div></div>
+    <div class="facts reveal"><div class="fact"><b>1:10</b><span>רק אחד מכל עשרה מועמדים מתקבל</span></div><div class="fact"><b>3</b><span>ימים בשבוע, אצלכם במשרד</span></div><div class="fact"><b>0</b><span>התחייבות להעסקה</span></div></div>
   </div>
 </section>
 
-<section class="block">
+<section class="alt" id="compare">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>הבעיה</span>
-      <h2>AI הוא בדרך כלל <span class="grad-text">רק דיבורים</span></h2>
-      <p class="lead">כולם מדברים על בינה מלאכותית. מעט חברות באמת משתמשות בה בעבודה היומיומית.</p>
+    <div class="head center reveal">
+      <span class="eyebrow">לפני ואחרי</span>
+      <h2 class="title">מכרז אחד.<br><span class="second">שתי דרכים לעבוד.</span></h2>
+      <p class="lede">ככה נראית הכנה של הצעה למכרז, היום ועם סטודנט של Meetek.</p>
     </div>
-    <div class="pains"><article class="pain r reveal"><div class="pi"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></span><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span></div><h3>ניסיתם ChatGPT, וזה נשאר בטאב בדפדפן</h3><p>העבודה עצמה נשארה אותו דבר: אקסל, מסמכים והעתק-הדבק.</p></article><article class="pain o reveal"><div class="pi"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></span><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 4.5a3 3 0 0 1 0 6M18 14a5.5 5.5 0 0 1 3 6"/></svg></span></div><h3>אף אחד בחברה לא יודע מאיפה להתחיל</h3><p>לכולם יש עבודה שוטפת, ואין למי לתת את הפרויקט הזה.</p></article><article class="pain p reveal"><div class="pi"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></span><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span></div><h3>יועצים נותנים מצגת, אבל לא בונים</h3><p>ההמלצות נשארות על הנייר, והתהליכים לא משתנים.</p></article></div>
-    <p class="callout reveal">אנחנו לא נותנים לכם מפת דרכים. <b>אנחנו יושבים אצלכם ובונים.</b></p>
-  </div>
-</section>
-
-<section class="block" id="work" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>על מה הסטודנט עובד</span>
-      <h2>התהליכים שאוכלים <span class="grad-text">לכם את השבוע</span></h2>
-      <p class="lead">הסטודנט מתחיל מהתהליך שהכי כואב לכם, ומשם ממשיך לבא בתור.</p>
-    </div>
-    <div class="cards"><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg></div><h3>מכרזים</h3><p>איתור מכרזים רלוונטיים, סיכום של כל מכרז לעמוד אחד, בדיקת תנאי סף ורשימת מסמכים שנבדקת אוטומטית.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18h8"/></svg></div><h3>כתבי כמויות וחשבונות חלקיים</h3><p>הפקת חשבון חלקי מתוך כתב הכמויות והמדידות, בלי להקליד הכול מחדש בכל חודש.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>טפסים, דוחות ויומני עבודה</h3><p>טפסי רגולציה, דוחות למזמין ויומני עבודה שנוצרים מהנתונים שכבר יש לכם.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6M15 18H9a3 3 0 0 1-3-3V9"/></svg></div><h3>חיבור בין מערכות</h3><p>Priority, חשבשבת, אקסל ומייל שמדברים אחד עם השני, במקום העתק-הדבק ידני.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div><h3>התאמות וחשבוניות</h3><p>התאמת חשבוניות ספקים להזמנות ולתעודות משלוח, ואיתור חריגות לפני שמשלמים.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h3M8 17h6"/></svg></div><h3>כלים פנימיים</h3><p>דשבורד רווחיות לכל פרויקט, מעקב ציוד בשטח, וכל מה שהיום מפוזר בעשרה קבצי אקסל.</p></article></div>
-  </div>
-</section>
-
-<section class="block" style="padding-top:0">
-  <div class="wrap showcase">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg>דוגמה מהשטח</span>
-      <h2>ככה נראית <span class="grad-text">עבודה של הסטודנט</span></h2>
-      <p class="lead">קחו לדוגמה מכרזים. במקום שמישהו יקרא 200 עמודים, כל מכרז מגיע מסוכם בעמוד אחד:</p>
-      <ul><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>מה העבודה, מי המזמין ומתי ההגשה</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>האם אתם עומדים בתנאי הסף</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אילו מסמכים כבר יש לכם ומה חסר</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אילו סעיפים כדאי לבדוק לפני שניגשים</li></ul>
-    </div>
-    <aside class="sample reveal" aria-label="סיכום מכרז בעמוד אחד">
-      <span class="sample-tag">דוגמה לתוצר</span>
-      <div class="sample-head"><strong>סיכום מכרז בעמוד אחד</strong><span>נוצר אוטומטית</span></div>
-      <dl><dt>מזמין</dt><dd>רשות מקומית</dd><dt>עבודה</dt><dd>שיקום תשתיות ופיתוח, שלב א'</dd><dt>הגשה</dt><dd>עוד 12 ימים</dd><dt>סיווג נדרש</dt><dd>ג3 ומעלה</dd></dl>
-      <ul class="checks"><li><span class="dot ok" aria-hidden="true">✓</span>עומדים בתנאי הסף: סיווג וניסיון קודם</li><li><span class="dot ok" aria-hidden="true">✓</span>9 מתוך 13 מסמכים כבר קיימים אצלכם</li><li><span class="dot warn" aria-hidden="true">!</span>חסר: אישור ניהול ספרים בתוקף וערבות הגשה</li><li><span class="dot warn" aria-hidden="true">!</span>סעיף פיצוי מוסכם חריג: כדאי לבדוק</li></ul>
-      <p class="sample-foot">המחשה בלבד. כך נראה תוצר טיפוסי של סטודנט שמטפל אצלכם במכרזים.</p>
-    </aside>
-  </div>
-</section>
-
-<section class="block" id="how" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>איך זה עובד</span>
-      <h2>מפגישה אחת <span class="grad-text">לסטודנט שעובד אצלכם</span></h2>
-    </div>
-    <ol class="steps"><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><small>שלב 1</small><h3>פגישת היכרות</h3><p>מבינים איך אתם עובדים היום ואיפה הולך הזמן.</p><span class="pill">30 דקות, ללא עלות</span></li><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l4-4 5 2 5-2 4 4"/><path d="M7 7v6l5 5 5-5V7"/></svg></div><small>שלב 2</small><h3>התאמת סטודנט</h3><p>בוחרים את הסטודנט שמתאים לתחום ולאנשים שלכם.</p><span class="pill">מתוך מי שעבר ראיונות</span></li><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><small>שלב 3</small><h3>החודש הראשון</h3><p>ממפים תהליכים ומתחילים מזה שיחסוך הכי הרבה.</p><span class="pill">תוצאה כבר בהתחלה</span></li><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1 1-1.5 4-1.5 4s3-.5 4-1.5"/><path d="M9 15l-3-3c1-4 5-9 12-9 0 7-5 11-9 12z"/><circle cx="14.5" cy="9.5" r="1.5"/></svg></div><small>שלב 4</small><h3>ליווי שוטף</h3><p>אנחנו מלווים את הסטודנט, ואם צריך, מחליפים.</p><span class="pill">3 ימים בשבוע</span></li></ol>
-  </div>
-</section>
-
-<section class="block" style="padding-top:0">
-  <div class="wrap">
-    <div class="story reveal">
-      <div class="head">
-        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>למה הקמנו את Meetek</span>
-        <h2>התחלנו <span class="grad-text">מבעיה אמיתית</span></h2>
-      </div>
-      <div>
-        <blockquote><p>"התחלתי לעבוד בחברת תשתיות ומצאתי מהנדסים מצוינים שעובדים כמו בשנות ה-90: דף, עט, וכמה סבבים בין אנשים עד שמסמך אחד יוצא. בניתי להם מערכת, ותהליך שלקח ימים לוקח היום דקות.</p><p>אז הבנתי שיש מאות חברות כאלה. ומהצד השני יש סטודנטים מצוינים בטכניון שמחפשים בדיוק אתגר כזה. Meetek מחברת בין השניים."</p></blockquote>
-        <cite><span class="avatar" aria-hidden="true">נ</span><span><b>נועם בן זמרה</b>מנכ"ל ומייסד שותף, Meetek</span></cite>
+    <div class="seg-wrap reveal">
+      <div class="seg" role="tablist" data-state="before">
+        <span class="thumb" aria-hidden="true"></span>
+        <button type="button" role="tab" id="tab-before" aria-controls="p-before" aria-selected="true" data-state="before">היום</button>
+        <button type="button" role="tab" id="tab-after" aria-controls="p-after" aria-selected="false" tabindex="-1" data-state="after">עם Meetek</button>
       </div>
     </div>
+    <div class="compare-card reveal">
+      <div class="panel panel-before" id="p-before" role="tabpanel" aria-labelledby="tab-before"><ul class="steps-list"><li><span class="mark" aria-hidden="true">!</span><span>קוראים 200 עמודים של מסמכי מכרז</span><span class="t">שעות</span></li><li><span class="mark" aria-hidden="true">!</span><span>בודקים תנאי סף ידנית, סעיף אחרי סעיף</span><span class="t">שעות</span></li><li><span class="mark" aria-hidden="true">!</span><span>מחפשים אישורים ומסמכים בתיקיות ובמיילים</span><span class="t">חצי יום</span></li><li><span class="mark" aria-hidden="true">!</span><span>מגלים ערב לפני ההגשה שחסר אישור בתוקף</span><span class="t">לחץ</span></li></ul></div>
+      <div class="panel panel-after" id="p-after" role="tabpanel" aria-labelledby="tab-after" hidden><ul class="steps-list"><li><span class="mark" aria-hidden="true">✓</span><span>כל מכרז מגיע מסוכם בעמוד אחד</span><span class="t">דקות</span></li><li><span class="mark" aria-hidden="true">✓</span><span>תנאי הסף נבדקים מול הנתונים שלכם</span><span class="t">אוטומטי</span></li><li><span class="mark" aria-hidden="true">✓</span><span>רשימת מסמכים שמתעדכנת לבד</span><span class="t">תמיד מעודכן</span></li><li><span class="mark" aria-hidden="true">✓</span><span>תזכורת שבוע מראש על כל מה שחסר</span><span class="t">בזמן</span></li></ul></div>
+    </div>
+    <p class="compare-foot">המחשה של תהליך טיפוסי. כל חברה מתחילה מהתהליך שהכי כואב לה.</p>
   </div>
 </section>
 
-<section class="block" id="students" style="padding-top:0">
+<section>
   <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 4.5a3 3 0 0 1 0 6M18 14a5.5 5.5 0 0 1 3 6"/></svg>הסטודנטים</span>
-      <h2>לא כל סטודנט. <span class="grad-text">הסטודנט הנכון.</span></h2>
+    <div class="head center reveal">
+      <span class="eyebrow">הבעיה</span>
+      <h2 class="title">כולם מדברים על AI.<br><span class="second">מעט באמת משתמשים בו.</span></h2>
     </div>
-    <div class="students">
-      <div class="panel reveal">
-        <h3>מי הם</h3>
-        <p>סטודנטים להנדסה ולמדעי המחשב בטכניון. אנחנו מחפשים שילוב נדיר: יכולת טכנית גבוהה, סבלנות להבין איך עסק עובד באמת, ויכולת לדבר עם אנשים שלא באים מעולם ההייטק.</p>
-        <div class="pick" role="img" aria-label="מתוך עשרה מועמדים, אחד מתקבל"><span class="pd"></span><span class="pd"></span><span class="pd"></span><span class="pd"></span><span class="pd"></span><span class="pd"></span><span class="pd"></span><span class="pd"></span><span class="pd"></span><span class="pd on"></span></div>
-        <p class="pick-cap"><b>1 מכל 10</b> מועמדים עובר את הראיונות שלנו ומתקבל</p>
-      </div>
-      <div class="panel reveal">
-        <h3>מה זה אומר בשבילכם</h3>
-        <ul><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>הסטודנט מועסק על ידי Meetek. אין גיוס, אין קליטה ואין התחייבות להעסקה.</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>הוא יושב אצלכם 3 ימים בשבוע ומכיר את האנשים ואת המערכות מבפנים.</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אנחנו מלווים אותו מקצועית לאורך כל הדרך.</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אם ההתאמה לא עובדת, מחליפים.</li></ul>
-      </div>
+    <div class="trio"><article class="tile reveal"><span class="num">01</span><h3>ניסיתם ChatGPT, וזה נשאר בטאב בדפדפן.</h3><p>העבודה עצמה נשארה אותו דבר: אקסל, מסמכים והעתק-הדבק.</p></article><article class="tile reveal"><span class="num">02</span><h3>אף אחד בחברה לא יודע מאיפה להתחיל.</h3><p>לכולם יש עבודה שוטפת, ואין למי לתת את הפרויקט הזה.</p></article><article class="tile reveal"><span class="num">03</span><h3>יועצים נותנים מצגת, אבל לא בונים.</h3><p>ההמלצות נשארות על הנייר, והתהליכים לא משתנים.</p></article></div>
+    <p class="statement title reveal" style="font-size:clamp(1.6rem,3.2vw,2.5rem)">אנחנו לא נותנים לכם מפת דרכים.<br><span style="color:var(--accent-ink)">אנחנו יושבים אצלכם ובונים.</span></p>
+  </div>
+</section>
+
+<section class="alt" id="work">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow">על מה הסטודנט עובד</span>
+      <h2 class="title">התהליכים שאוכלים<br><span class="second">לכם את השבוע.</span></h2>
+    </div>
+    <div class="bento">
+      <article class="b w6 b-feature reveal">
+        <div>
+          <span class="eyebrow">מכרזים</span>
+          <h3 class="title">מ-200 עמודים לעמוד אחד.</h3>
+          <p class="lede">הסטודנט בונה לכם מערכת שמסכמת כל מכרז, בודקת תנאי סף ומראה מה חסר, לפני שמחליטים לגשת.</p>
+        </div>
+        <div class="doc" aria-label="סיכום מכרז">
+          <div class="doc-head"><strong>סיכום מכרז</strong><span>נוצר אוטומטית</span></div>
+          <dl><dt>מזמין</dt><dd>רשות מקומית</dd><dt>עבודה</dt><dd>שיקום תשתיות, שלב א'</dd><dt>הגשה</dt><dd>עוד 12 ימים</dd><dt>סיווג</dt><dd>ג3 ומעלה</dd></dl>
+          <ul><li><span class="ok" aria-hidden="true">✓</span>עומדים בתנאי הסף</li><li><span class="ok" aria-hidden="true">✓</span>9 מתוך 13 מסמכים קיימים</li><li><span class="warn" aria-hidden="true">!</span>חסר: אישור ניהול ספרים בתוקף</li><li><span class="warn" aria-hidden="true">!</span>סעיף פיצוי מוסכם חריג</li></ul>
+          <p class="doc-foot">המחשה בלבד.</p>
+        </div>
+      </article>
+      <article class="b w3 reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18h8"/></svg></div><h3>כתבי כמויות וחשבונות חלקיים</h3><p>חשבון חלקי שיוצא מתוך כתב הכמויות, בלי להקליד הכול מחדש בכל חודש.</p></article><article class="b w3 reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>טפסים, דוחות ויומני עבודה</h3><p>מסמכים שנוצרים מהנתונים שכבר יש לכם, במקום למלא אותם ביד.</p></article><article class="b w2 reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6M15 18H9a3 3 0 0 1-3-3V9"/></svg></div><h3>חיבור בין מערכות</h3><p>Priority, חשבשבת, אקסל ומייל שמדברים אחד עם השני.</p></article><article class="b w2 reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div><h3>התאמת חשבוניות</h3><p>חשבוניות ספקים מול הזמנות, וחריגות נתפסות לפני התשלום.</p></article><article class="b w2 reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h3M8 17h6"/></svg></div><h3>כלים פנימיים</h3><p>רווחיות לכל פרויקט ומעקב ציוד, במקום עשרה קבצי אקסל.</p></article>
     </div>
   </div>
 </section>
 
-<section class="block" style="padding-top:0">
+<section id="how">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>השוואה</span>
-      <h2>למה לא פשוט לגייס, <span class="grad-text">או להביא יועץ?</span></h2>
+    <div class="head center reveal">
+      <span class="eyebrow">איך זה עובד</span>
+      <h2 class="title">מפגישה אחת<br><span class="second">לסטודנט שעובד אצלכם.</span></h2>
     </div>
-    <div class="table-wrap reveal"><table><thead><tr><th scope="col"><span class="sr-only">קריטריון</span></th><th scope="col">גיוס עובד</th><th scope="col">יועץ חיצוני</th><th scope="col" class="us">Meetek</th></tr></thead><tbody><tr><td>התחייבות</td><td>חוזה העסקה</td><td>פרויקט סגור, תשלום גבוה לשעה</td><td class="us">תשלום לפי שעות, בלי התחייבות ארוכה</td></tr><tr><td>נמצא אצלכם</td><td>כן</td><td>לרוב לא</td><td class="us">3 ימים בשבוע, במשרד</td></tr><tr><td>מה מקבלים</td><td>תלוי במי שגייסתם</td><td>המלצות ומצגת</td><td class="us">כלים שנבנים ומוטמעים בפועל</td></tr><tr><td>אם זה לא מתאים</td><td>תהליך פיטורים</td><td>סוף הפרויקט</td><td class="us">מחליפים סטודנט</td></tr></tbody></table></div>
+    <ol class="flow"><li class="reveal"><span class="n">01</span><h3>פגישת היכרות</h3><p>מבינים איך אתם עובדים היום ואיפה הולך הזמן.</p><span class="meta">30 דקות, ללא עלות</span></li><li class="reveal"><span class="n">02</span><h3>התאמת סטודנט</h3><p>בוחרים את מי שמתאים לתחום ולאנשים שלכם.</p><span class="meta">מתוך מי שעבר ראיונות</span></li><li class="reveal"><span class="n">03</span><h3>החודש הראשון</h3><p>ממפים תהליכים ומתחילים מזה שיחסוך הכי הרבה.</p><span class="meta">תוצאה כבר בהתחלה</span></li><li class="reveal"><span class="n">04</span><h3>ליווי שוטף</h3><p>אנחנו מלווים את הסטודנט, ואם צריך, מחליפים.</p><span class="meta">3 ימים בשבוע</span></li></ol>
   </div>
 </section>
 
-<section class="block" id="faq" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>שאלות נפוצות</span>
-      <h2>מה ששואלים אותנו <span class="grad-text">בפגישה הראשונה</span></h2>
-    </div>
-    <div class="faq reveal"><details><summary>כמה זה עולה?</summary><p>משלמים לפי שעות עבודה בפועל, בלי דמי הצטרפות ובלי התחייבות ארוכה. נפרט את המחיר המדויק בפגישת ההיכרות, אחרי שנבין מה אתם צריכים.</p></details><details><summary>ניסינו AI וזה לא עבד. למה שהפעם זה יהיה אחרת?</summary><p>כי הפעם יש מישהו שיושב אצלכם. כלי AI לבד לא יודעים איך נראה כתב הכמויות שלכם, איפה נשמרים המסמכים, או מי צריך לאשר מה. הסטודנט לומד את זה מבפנים, ובונה את הכלים סביב העבודה האמיתית שלכם.</p></details><details><summary>למה סטודנט ולא מהנדס בכיר?</summary><p>כי מה שצריך כאן הוא מישהו חד, סקרן וזמין, שיושב אצלכם שלושה ימים בשבוע ולומד את העסק. הסטודנטים שלנו עוברים ראיונות, רק אחד מכל עשרה מתקבל, ואנחנו מלווים אותם לאורך כל הדרך.</p></details><details><summary>מה לגבי סודיות המידע שלנו?</summary><p>לפני תחילת העבודה חותמים על הסכם סודיות. הסטודנט עובד רק על המערכות והמסמכים שתאשרו לו.</p></details><details><summary>צריך מחלקת IT או מערכות חדשות?</summary><p>לא. הסטודנט עובד מעל מה שכבר יש לכם: אקסל, Priority, חשבשבת, מייל ותיקיות משותפות.</p></details><details><summary>מה קורה אם הסטודנט לא מתאים?</summary><p>מחליפים. ההתאמה בין הסטודנט לחברה היא באחריות שלנו.</p></details></div>
+<section class="alt">
+  <div class="wrap quote reveal">
+    <span class="eyebrow">למה הקמנו את Meetek</span>
+    <blockquote><p>"מצאתי מהנדסים מצוינים שעובדים כמו בשנות ה-90. בניתי להם מערכת, ותהליכים שלקחו ימים לוקחים היום דקות.</p><p><span class="dim">יש מאות חברות כאלה. ויש סטודנטים מצוינים בטכניון שמחפשים בדיוק את האתגר הזה."</span></p></blockquote>
+    <cite><b>נועם בן זמרה</b> · מנכ"ל ומייסד שותף, Meetek</cite>
   </div>
 </section>
 
-<section class="block" style="padding-top:0">
+<section id="students">
   <div class="wrap">
-    <div class="contact reveal" id="contact">
-      <div>
-        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>בואו נדבר</span>
-        <h2>חצי שעה, ותדעו איפה הולך לכם הזמן</h2>
-        <p class="lead">פגישת היכרות ללא עלות, אצלכם במשרד או בטלפון. נבין איך אתם עובדים היום, ונגיד לכם איפה אפשר לחסוך הכי הרבה.</p>
-      </div>
-      <div class="contact-list">
-        <a href="tel:+972584001054"><span><small>טלפון</small><strong>058-4001054</strong></span><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span></a>
-        <a href="https://wa.me/972584001054?text=%D7%94%D7%99%D7%99%20%D7%A0%D7%95%D7%A2%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20Meetek" target="_blank" rel="noopener"><span><small>וואטסאפ</small><strong>שלחו הודעה</strong></span><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg></span></a>
-        <a href="mailto:noam@meetek.ai?subject=%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%94%D7%99%D7%9B%D7%A8%D7%95%D7%AA%20%D7%A2%D7%9D%20Meetek"><span><small>מייל</small><strong>noam@meetek.ai</strong></span><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a>
-      </div>
+    <div class="head center reveal">
+      <span class="eyebrow">הסטודנטים</span>
+      <h2 class="title">לא כל סטודנט.<br><span class="second">הסטודנט הנכון.</span></h2>
     </div>
-    <div class="join reveal">
-      <p><b>סטודנטים בטכניון?</b> מחפשים עבודה אמיתית עם השפעה, בחברות שבאמת צריכות אתכם? שלחו לנו קורות חיים.</p>
-      <a class="btn btn-ghost" href="mailto:noam@meetek.ai?subject=%D7%9E%D7%95%D7%A2%D7%9E%D7%93%D7%95%D7%AA%20%D7%9C-Meetek">להגשת מועמדות</a>
+    <div class="reveal">
+      <div class="dots" role="img" aria-label="מתוך עשרה מועמדים, אחד מתקבל"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot on"></span></div>
+      <p class="dots-cap"><b>1 מכל 10</b> מועמדים עובר את הראיונות שלנו ומתקבל.</p>
     </div>
+    <div class="duo">
+      <div class="tile reveal"><h3>מי הם</h3><p style="margin-top:1rem;color:var(--ink-2)">סטודנטים להנדסה ולמדעי המחשב בטכניון: יכולת טכנית גבוהה, סבלנות להבין איך עסק עובד באמת, ויכולת לדבר עם אנשים שלא באים מעולם ההייטק.</p></div>
+      <div class="tile reveal"><h3>מה זה אומר בשבילכם</h3><ul><li>הסטודנט מועסק על ידי Meetek. אין גיוס ואין התחייבות להעסקה.</li><li>הוא יושב אצלכם 3 ימים בשבוע ומכיר את המערכות מבפנים.</li><li>אנחנו מלווים אותו מקצועית לאורך כל הדרך.</li><li>אם ההתאמה לא עובדת, מחליפים.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow">השוואה</span>
+      <h2 class="title">למה לא פשוט לגייס,<br><span class="second">או להביא יועץ?</span></h2>
+    </div>
+    <div class="table-wrap reveal"><table><thead><tr><th scope="col"><span class="sr-only">קריטריון</span></th><th scope="col">גיוס עובד</th><th scope="col">יועץ חיצוני</th><th scope="col" class="us">Meetek</th></tr></thead><tbody><tr><td>התחייבות</td><td>חוזה העסקה</td><td>פרויקט סגור, יקר לשעה</td><td class="us">לפי שעות, בלי התחייבות ארוכה</td></tr><tr><td>נמצא אצלכם</td><td>כן</td><td>לרוב לא</td><td class="us">3 ימים בשבוע, במשרד</td></tr><tr><td>מה מקבלים</td><td>תלוי במי שגייסתם</td><td>המלצות ומצגת</td><td class="us">כלים שנבנים ומוטמעים</td></tr><tr><td>אם זה לא מתאים</td><td>תהליך פיטורים</td><td>סוף הפרויקט</td><td class="us">מחליפים סטודנט</td></tr></tbody></table></div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow">שאלות נפוצות</span>
+      <h2 class="title">מה ששואלים אותנו<br><span class="second">בפגישה הראשונה.</span></h2>
+    </div>
+    <div class="faq reveal"><details><summary>כמה זה עולה?<span class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>משלמים לפי שעות עבודה בפועל, בלי דמי הצטרפות ובלי התחייבות ארוכה. נפרט את המחיר המדויק בפגישת ההיכרות.</p></details><details><summary>ניסינו AI וזה לא עבד. למה שהפעם זה יהיה אחרת?<span class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>כי הפעם יש מישהו שיושב אצלכם. כלי AI לבד לא יודעים איך נראה כתב הכמויות שלכם או מי צריך לאשר מה. הסטודנט לומד את זה מבפנים ובונה סביב העבודה האמיתית.</p></details><details><summary>למה סטודנט ולא מהנדס בכיר?<span class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>כי צריך מישהו חד, סקרן וזמין, שיושב אצלכם שלושה ימים בשבוע ולומד את העסק. רק אחד מכל עשרה מתקבל, ואנחנו מלווים אותו לאורך כל הדרך.</p></details><details><summary>מה לגבי סודיות המידע שלנו?<span class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>לפני תחילת העבודה חותמים על הסכם סודיות. הסטודנט עובד רק על המערכות והמסמכים שתאשרו לו.</p></details><details><summary>צריך מחלקת IT או מערכות חדשות?<span class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>לא. הסטודנט עובד מעל מה שכבר יש לכם: אקסל, Priority, חשבשבת, מייל ותיקיות משותפות.</p></details><details><summary>מה קורה אם הסטודנט לא מתאים?<span class="plus"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>מחליפים. ההתאמה היא באחריות שלנו.</p></details></div>
+  </div>
+</section>
+
+<section class="alt cta" id="contact">
+  <div class="wrap reveal">
+    <h2 class="display" style="font-size:clamp(2.3rem,6vw,4.5rem)">חצי שעה,<br><span class="second">ותדעו איפה הולך לכם הזמן.</span></h2>
+    <p class="lede">פגישת היכרות ללא עלות, אצלכם במשרד או בטלפון.</p>
+    <div class="contact-row">
+      <a class="btn btn-primary" href="tel:+972584001054"><span class="ltr">058-4001054</span></a>
+      <a class="btn btn-quiet" href="https://wa.me/972584001054?text=%D7%94%D7%99%D7%99%20%D7%A0%D7%95%D7%A2%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20Meetek" target="_blank" rel="noopener">וואטסאפ</a>
+      <a class="btn btn-quiet" href="mailto:noam@meetek.ai?subject=%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%94%D7%99%D7%9B%D7%A8%D7%95%D7%AA%20%D7%A2%D7%9D%20Meetek"><span class="ltr">noam@meetek.ai</span></a>
+    </div>
+    <p class="join">סטודנטים בטכניון? מחפשים עבודה עם השפעה אמיתית. <a href="mailto:noam@meetek.ai?subject=%D7%9E%D7%95%D7%A2%D7%9E%D7%93%D7%95%D7%AA%20%D7%9C-Meetek">שלחו קורות חיים<span class="chev" aria-hidden="true">›</span></a></p>
   </div>
 </section>
 
@@ -199,9 +189,8 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Meetek"><svg width="34" height="24" viewBox="0 0 30 22" aria-hidden="true"><circle class="c1" cx="10" cy="11" r="8.6" fill="none" stroke-width="2.6"/><circle class="c2" cx="20" cy="11" r="8.6" fill="none" stroke-width="2.6"/></svg>Meetek</a>
-    <span>הטמעת AI בחברות הנדסה, ביצוע ותשתיות · <a href="mailto:noam@meetek.ai">noam@meetek.ai</a></span>
-    <span>© <span id="y">2026</span> Meetek · <a href="en/" lang="en">English</a></span>
+    <span>© <span id="y">2026</span> Meetek · הטמעת AI בחברות הנדסה, ביצוע ותשתיות</span>
+    <span><a href="mailto:noam@meetek.ai">noam@meetek.ai</a> · <a href="en/" hreflang="en">English</a></span>
   </div>
 </footer>
 
