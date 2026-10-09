@@ -48,11 +48,11 @@ HE = dict(
  skip="דילוג לתוכן", home="Meetek, לראש העמוד", nav_label="ניווט ראשי",
  nav=[("#work","על מה עובדים"),("#how","איך זה עובד"),("#students","הסטודנטים"),("#faq","שאלות נפוצות")],
  theme_label="מצב כהה או בהיר", cta_nav="לתיאום פגישה",
- badge="סטודנטים מצטיינים מהטכניון, רק 1 מכל 10 מתקבל",
+ badge="סטודנטים מצטיינים מהטכניון, אצלכם במשרד",
  h1a="AI שעובד אצלכם במשרד.", h1b="לא רק במצגת.",
  lead="Meetek מציבה בחברה שלכם סטודנט מצטיין להנדסה מהטכניון, 3 ימים בשבוע. הוא לומד איך העבודה נעשית היום, מוצא איפה הולכות השעות, ובונה את הכלים שמחזירים לכם אותן.",
  cta1="לפגישת היכרות של חצי שעה", cta2="איך זה עובד",
- stats=[("users","1:10","רק אחד מכל עשרה מועמדים מתקבל"),("clock","3","ימים בשבוע אצלכם במשרד"),("shield","0","התחייבות להעסקה")],
+ stats=[("search","30","דקות של פגישת היכרות, ללא עלות"),("clock","3","ימים בשבוע אצלכם במשרד"),("shield","0","התחייבות להעסקה")],
  p_badge="הבעיה", p_h2a="AI הוא בדרך כלל", p_h2b="רק דיבורים",
  p_lead="כולם מדברים על בינה מלאכותית. מעט חברות באמת משתמשות בה בעבודה היומיומית.",
  pains=[("r","clock","ניסיתם ChatGPT, וזה נשאר בטאב בדפדפן","העבודה עצמה נשארה אותו דבר: אקסל, מסמכים והעתק-הדבק."),
@@ -86,7 +86,7 @@ HE = dict(
  su_badge="הסטודנטים", su_h2a="לא כל סטודנט.", su_h2b="הסטודנט הנכון.",
  su_who_h="מי הם", su_who="סטודנטים להנדסה ולמדעי המחשב בטכניון. אנחנו מחפשים שילוב נדיר: יכולת טכנית גבוהה, סבלנות להבין איך עסק עובד באמת, ויכולת לדבר עם אנשים שלא באים מעולם ההייטק.",
  pick_label="מתוך עשרה מועמדים, אחד מתקבל", pick_cap_b="1 מכל 10", pick_cap="מועמדים עובר את הראיונות שלנו ומתקבל",
- su_you_h="מה זה אומר בשבילכם", su_you=["הסטודנט מועסק על ידי Meetek. אין גיוס, אין קליטה ואין התחייבות להעסקה.","הוא יושב אצלכם 3 ימים בשבוע ומכיר את האנשים ואת המערכות מבפנים.","אנחנו מלווים אותו מקצועית לאורך כל הדרך.","אם ההתאמה לא עובדת, מחליפים."],
+ su_you_h="מה זה אומר בשבילכם", su_you=["הסטודנט עובד מטעם Meetek. אתם לא מגייסים ולא מעסיקים אותו.","הוא יושב אצלכם 3 ימים בשבוע ומכיר את האנשים ואת המערכות מבפנים.","אנחנו מלווים אותו מקצועית לאורך כל הדרך.","אם ההתאמה לא עובדת, מחליפים."],
  c_badge="השוואה", c_h2a="למה לא פשוט לגייס,", c_h2b="או להביא יועץ?",
  c_head=["קריטריון","גיוס עובד","יועץ חיצוני","Meetek"],
  c_rows=[("התחייבות","חוזה העסקה","פרויקט סגור, תשלום גבוה לשעה","תשלום לפי שעות, בלי התחייבות ארוכה"),
@@ -96,7 +96,7 @@ HE = dict(
  f_badge="שאלות נפוצות", f_h2a="מה ששואלים אותנו", f_h2b="בפגישה הראשונה",
  faq=[("כמה זה עולה?","משלמים לפי שעות עבודה בפועל, בלי דמי הצטרפות ובלי התחייבות ארוכה. נפרט את המחיר המדויק בפגישת ההיכרות, אחרי שנבין מה אתם צריכים."),
       ("ניסינו AI וזה לא עבד. למה שהפעם זה יהיה אחרת?","כי הפעם יש מישהו שיושב אצלכם. כלי AI לבד לא יודעים איך נראה כתב הכמויות שלכם, איפה נשמרים המסמכים, או מי צריך לאשר מה. הסטודנט לומד את זה מבפנים, ובונה את הכלים סביב העבודה האמיתית שלכם."),
-      ("למה סטודנט ולא מהנדס בכיר?","כי מה שצריך כאן הוא מישהו חד, סקרן וזמין, שיושב אצלכם שלושה ימים בשבוע ולומד את העסק. הסטודנטים שלנו עוברים ראיונות, רק אחד מכל עשרה מתקבל, ואנחנו מלווים אותם לאורך כל הדרך."),
+      ("למה סטודנט ולא מהנדס בכיר?","כי מה שצריך כאן הוא מישהו חד, סקרן וזמין, שיושב אצלכם שלושה ימים בשבוע ולומד את העסק. כל סטודנט עובר אצלנו ראיונות, ואנחנו מלווים אותו לאורך כל הדרך."),
       ("מה לגבי סודיות המידע שלנו?","לפני תחילת העבודה חותמים על הסכם סודיות. הסטודנט עובד רק על המערכות והמסמכים שתאשרו לו."),
       ("צריך מחלקת IT או מערכות חדשות?","לא. הסטודנט עובד מעל מה שכבר יש לכם: אקסל, Priority, חשבשבת, מייל ותיקיות משותפות."),
       ("מה קורה אם הסטודנט לא מתאים?","מחליפים. ההתאמה בין הסטודנט לחברה היא באחריות שלנו.")],
@@ -117,11 +117,11 @@ EN = dict(
  skip="Skip to content", home="Meetek, back to top", nav_label="Main",
  nav=[("#work","What we do"),("#how","How it works"),("#students","Our students"),("#faq","FAQ")],
  theme_label="Toggle dark or light mode", cta_nav="Book a meeting",
- badge="Top Technion students, only 1 in 10 accepted",
+ badge="Top Technion students, in your office",
  h1a="AI that works in your office.", h1b="Not just in a slide deck.",
  lead="Meetek places a top engineering student from the Technion in your company, 3 days a week. They learn how the work gets done today, find where the hours go, and build the tools that give those hours back.",
  cta1="Book a 30-minute intro", cta2="How it works",
- stats=[("users","1:10","only one in ten candidates is accepted"),("clock","3","days a week in your office"),("shield","0","hiring commitment")],
+ stats=[("search","30","minute intro meeting, free of charge"),("clock","3","days a week in your office"),("shield","0","hiring commitment")],
  p_badge="The problem", p_h2a="AI is often just", p_h2b="talk",
  p_lead="Everyone talks about artificial intelligence. Few companies actually use it in their day-to-day work.",
  pains=[("r","clock","You tried ChatGPT, and it stayed in a browser tab","The work itself stayed the same: spreadsheets, documents and copy-paste."),
@@ -155,7 +155,7 @@ EN = dict(
  su_badge="Our students", su_h2a="Not just any student.", su_h2b="The right one.",
  su_who_h="Who they are", su_who="Engineering and computer science students at the Technion. We look for a rare combination: strong technical ability, the patience to understand how a business really works, and the ability to talk with people who don't come from tech.",
  pick_label="Out of ten candidates, one is accepted", pick_cap_b="1 in 10", pick_cap="candidates passes our interviews and is accepted",
- su_you_h="What this means for you", su_you=["The student is employed by Meetek. No recruiting, no onboarding paperwork, no hiring commitment.","They sit in your office 3 days a week and get to know your people and systems from the inside.","We mentor them professionally throughout.","If the fit isn't right, we replace them."],
+ su_you_h="What this means for you", su_you=["The student works on behalf of Meetek. You don't recruit or employ them.","They sit in your office 3 days a week and get to know your people and systems from the inside.","We mentor them professionally throughout.","If the fit isn't right, we replace them."],
  c_badge="Comparison", c_h2a="Why not just hire,", c_h2b="or bring in a consultant?",
  c_head=["Criteria","Hiring an employee","External consultant","Meetek"],
  c_rows=[("Commitment","Employment contract","Fixed project, high hourly rate","Pay by the hour, no long-term commitment"),
@@ -165,7 +165,7 @@ EN = dict(
  f_badge="FAQ", f_h2a="What people ask us", f_h2b="in the first meeting",
  faq=[("How much does it cost?","You pay for actual hours worked, with no setup fee and no long-term commitment. We'll give you the exact price in the intro meeting, once we understand what you need."),
       ("We tried AI and it didn't work. Why would this be different?","Because this time someone sits in your office. AI tools on their own don't know what your bill of quantities looks like, where documents are stored, or who signs off on what. The student learns all of that from the inside and builds the tools around your real work."),
-      ("Why a student and not a senior engineer?","Because what you need here is someone sharp, curious and available, who sits with you three days a week and learns the business. Our students go through interviews, only one in ten is accepted, and we mentor them all the way."),
+      ("Why a student and not a senior engineer?","Because what you need here is someone sharp, curious and available, who sits with you three days a week and learns the business. Every student is interviewed by us, and we mentor them all the way."),
       ("What about the confidentiality of our data?","We sign a non-disclosure agreement before work begins. The student only works on the systems and documents you approve."),
       ("Do we need an IT department or new systems?","No. The student works on top of what you already use: spreadsheets, your ERP and accounting software, email and shared folders."),
       ("What if the student isn't a good fit?","We replace them. Getting the match right is our responsibility.")],
@@ -342,8 +342,6 @@ def page(t):
       <div class="panel reveal">
         <h3>{t["su_who_h"]}</h3>
         <p>{t["su_who"]}</p>
-        <div class="pick" role="img" aria-label="{t["pick_label"]}">{dots}</div>
-        <p class="pick-cap"><b>{t["pick_cap_b"]}</b> {t["pick_cap"]}</p>
       </div>
       <div class="panel reveal">
         <h3>{t["su_you_h"]}</h3>
