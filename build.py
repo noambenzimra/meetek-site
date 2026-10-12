@@ -105,7 +105,7 @@ HE = dict(
  k_phone="טלפון", k_phone_v="058-4001054", k_wa="וואטסאפ", k_wa_v="שלחו הודעה", k_wa_text="היי נועם, אשמח לשמוע על Meetek",
  k_mail="מייל", k_mail_subj="פגישת היכרות עם Meetek",
  j_b="סטודנטים בטכניון?", j_t="מחפשים עבודה אמיתית עם השפעה, בחברות שבאמת צריכות אתכם? שלחו לנו קורות חיים.", j_btn="להגשת מועמדות", j_subj="מועמדות ל-Meetek",
- foot="הטמעת AI בחברות הנדסה, ביצוע ותשתיות", foot_other="English",
+ foot="הטמעת AI בחברות הנדסה, ביצוע ותשתיות", foot_other="English", a11y_link="הצהרת נגישות", a11y_href="accessibility/",
 )
 
 EN = dict(
@@ -174,7 +174,7 @@ EN = dict(
  k_phone="Phone", k_phone_v="+972 58-400-1054", k_wa="WhatsApp", k_wa_v="Send a message", k_wa_text="Hi Noam, I'd like to hear about Meetek",
  k_mail="Email", k_mail_subj="Intro meeting with Meetek",
  j_b="Technion student?", j_t="Looking for real work with real impact, at companies that truly need you? Send us your CV.", j_btn="Apply", j_subj="Application to Meetek",
- foot="AI implementation for engineering, construction and infrastructure firms", foot_other="עברית",
+ foot="AI implementation for engineering, construction and infrastructure firms", foot_other="עברית", a11y_link="Accessibility statement", a11y_href="accessibility/",
 )
 
 def page(t):
@@ -398,7 +398,7 @@ def page(t):
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Meetek">{LOGO}Meetek</a>
     <span>{t["foot"]} · <a href="mailto:noam@meetek.ai">noam@meetek.ai</a></span>
-    <span>© <span id="y">2026</span> Meetek · <a href="{t["other"]}" lang="{t["other_lang"]}">{t["foot_other"]}</a></span>
+    <span>© <span id="y">2026</span> Meetek · <a href="{t["a11y_href"]}">{t["a11y_link"]}</a> · <a href="{t["other"]}" lang="{t["other_lang"]}">{t["foot_other"]}</a></span>
   </div>
 </footer>
 
@@ -410,7 +410,121 @@ def page(t):
 def quote_(s):
     return quote(s, safe="")
 
+
+A11Y = {
+ "he": dict(lang="he", dir="rtl", base="../", home="../", other="../en/accessibility/", other_label="EN", other_lang="en",
+  title="הצהרת נגישות | Meetek", h1="הצהרת נגישות", updated="עודכן לאחרונה: 12 באוקטובר 2026",
+  intro="ב-Meetek אנחנו רוצים שכל אחד יוכל להשתמש באתר שלנו ולפנות אלינו בקלות. האתר נבנה בהתאם לתקן הישראלי IS 5568, המבוסס על הנחיות WCAG 2.0 ברמה AA.",
+  done_h="מה עשינו כדי להנגיש את האתר",
+  done=["האתר כתוב בעברית, עם כיוון קריאה מימין לשמאל ושפת עמוד מוגדרת. יש גם גרסה באנגלית.",
+        "אפשר לנווט בכל האתר באמצעות המקלדת בלבד. יש קישור \"דילוג לתוכן\" ומסגרת מיקוד ברורה סביב הרכיב שנבחר.",
+        "הכותרות בנויות במבנה היררכי, ולכל כפתור ורכיב אינטראקטיבי יש תווית ברורה לקוראי מסך.",
+        "ניגודיות הצבעים של הטקסט והכפתורים עומדת ברמה AA, במצב בהיר ובמצב כהה.",
+        "האתר מכבד את הגדרות המכשיר: מי שהגדיר \"הפחתת תנועה\" יקבל אתר בלי אנימציות.",
+        "האתר מותאם לטלפונים ולהגדלת טקסט בדפדפן עד 200%.",
+        "אנחנו לא משתמשים בתוסף נגישות אוטומטי (\"overlay\"). ההנגשה בנויה בקוד האתר עצמו."],
+  limits_h="מגבלות ידועות",
+  limits="האתר נבדק בכלי בדיקה אוטומטיים. בדיקה ידנית מלאה עם קוראי מסך (NVDA ו-VoiceOver) עדיין לא הושלמה. אם נתקלתם בקושי, נשמח שתספרו לנו ונתקן.",
+  report_h="דיווח על בעיית נגישות או בקשה להתאמה",
+  report="נתקלתם ברכיב שלא נגיש לכם, או שאתם צריכים את המידע בדרך אחרת? אפשר לפנות אלינו בכל אחת מהדרכים האלה, ונחזור אליכם בהקדם:",
+  ch_mail="מייל", ch_phone="טלפון", ch_wa="וואטסאפ", wa_text="היי, אני רוצה לדווח על בעיית נגישות באתר Meetek",
+  report_tip="כדי שנוכל לטפל מהר, כדאי לציין באיזה עמוד הייתה הבעיה, מה ניסיתם לעשות, ובאיזה מכשיר ודפדפן השתמשתם.",
+  service_h="הסדרי נגישות בשירות",
+  service=["פגישת ההיכרות יכולה להתקיים במשרדי הלקוח, בטלפון או בשיחת וידאו, לפי מה שנוח לכם.",
+           "אפשר לקבל כל מסמך או הצעה שלנו בפורמט נגיש, לפי בקשה."],
+  back="חזרה לדף הבית"),
+ "en": dict(lang="en", dir="ltr", base="../../", home="../", other="../../accessibility/", other_label="עב", other_lang="he",
+  title="Accessibility statement | Meetek", h1="Accessibility statement", updated="Last updated: October 12, 2026",
+  intro="At Meetek we want everyone to be able to use our website and reach us easily. The site is built to the Israeli standard IS 5568, which is based on WCAG 2.0 level AA.",
+  done_h="What we did to make the site accessible",
+  done=["The site is available in Hebrew (right to left) and English, with the page language set correctly.",
+        "The whole site can be used with a keyboard alone. There is a \"Skip to content\" link and a clear focus outline.",
+        "Headings follow a logical hierarchy, and every button and interactive element has a clear label for screen readers.",
+        "Text and button color contrast meets level AA, in both light and dark mode.",
+        "The site respects device settings: with \"reduce motion\" enabled, animations are turned off.",
+        "The site works on phones and with browser text zoom up to 200%.",
+        "We do not use an automatic accessibility overlay. Accessibility is built into the site's code."],
+  limits_h="Known limitations",
+  limits="The site has been checked with automated testing tools. Full manual testing with screen readers (NVDA and VoiceOver) has not been completed yet. If anything is hard to use, please tell us and we will fix it.",
+  report_h="Report an accessibility issue or request an accommodation",
+  report="Found something that isn't accessible to you, or need information in another format? Contact us in any of these ways and we will get back to you as soon as possible:",
+  ch_mail="Email", ch_phone="Phone", ch_wa="WhatsApp", wa_text="Hi, I'd like to report an accessibility issue on the Meetek website",
+  report_tip="To help us fix it quickly, please tell us which page it was on, what you were trying to do, and which device and browser you used.",
+  service_h="Accessibility of our service",
+  service=["The intro meeting can take place at your office, by phone or by video call, whichever suits you.",
+           "Any document or proposal we send can be provided in an accessible format on request."],
+  back="Back to home page"),
+}
+
+def statement(t):
+    b = t["base"]
+    done = "".join(f"<li>{x}</li>" for x in t["done"])
+    serv = "".join(f"<li>{x}</li>" for x in t["service"])
+    wa = "https://wa.me/972584001054?text=" + quote_(t["wa_text"])
+    return f"""<!doctype html>
+<html lang="{t["lang"]}" dir="{t["dir"]}" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{t["title"]}</title>
+<meta name="theme-color" content="#0A1020">
+<link rel="icon" href="{b}favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{b}styles.css">
+<script>try{{if(localStorage.getItem('meetek-theme')==='light')document.documentElement.removeAttribute('data-theme')}}catch(e){{}}</script>
+</head>
+<body class="no-js">
+<a class="skip" href="#main">{"דילוג לתוכן" if t["lang"]=="he" else "Skip to content"}</a>
+<header class="site" id="top">
+  <div class="nav">
+    <a class="brand" href="{t["home"]}" aria-label="Meetek">{LOGO}Meetek</a>
+    <div class="nav-end">
+      <a class="icon-btn" href="{t["other"]}" lang="{t["other_lang"]}" hreflang="{t["other_lang"]}">{t["other_label"]}</a>
+      <button class="icon-btn theme" type="button" aria-label="{"מצב כהה או בהיר" if t["lang"]=="he" else "Toggle dark or light mode"}"><span class="moon">{ic("moon",18)}</span><span class="sun">{ic("sun",18)}</span></button>
+    </div>
+  </div>
+</header>
+<main id="main" class="a11y">
+  <h1>{t["h1"]}</h1>
+  <p class="updated">{t["updated"]}</p>
+  <p>{t["intro"]}</p>
+  <h2>{t["done_h"]}</h2>
+  <ul>{done}</ul>
+  <h2>{t["limits_h"]}</h2>
+  <p>{t["limits"]}</p>
+  <h2>{t["report_h"]}</h2>
+  <div class="box">
+    <p>{t["report"]}</p>
+    <ul>
+      <li>{t["ch_mail"]}: <a href="mailto:noam@meetek.ai"><span dir="ltr">noam@meetek.ai</span></a></li>
+      <li>{t["ch_phone"]}: <a href="tel:+972584001054"><span dir="ltr">058-4001054</span></a></li>
+      <li>{t["ch_wa"]}: <a href="{wa}" target="_blank" rel="noopener"><span dir="ltr">058-4001054</span></a></li>
+    </ul>
+    <p>{t["report_tip"]}</p>
+  </div>
+  <h2>{t["service_h"]}</h2>
+  <ul>{serv}</ul>
+  <a class="back" href="{t["home"]}">{t["back"]}</a>
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="{t["home"]}" aria-label="Meetek">{LOGO}Meetek</a>
+    <span><a href="mailto:noam@meetek.ai">noam@meetek.ai</a></span>
+    <span>© <span id="y">2026</span> Meetek</span>
+  </div>
+</footer>
+<script src="{b}site.js"></script>
+</body>
+</html>
+"""
+
 os.makedirs(OUT + "/en", exist_ok=True)
+os.makedirs(OUT + "/accessibility", exist_ok=True)
+os.makedirs(OUT + "/en/accessibility", exist_ok=True)
+open(OUT + "/accessibility/index.html", "w").write(statement(A11Y["he"]))
+open(OUT + "/en/accessibility/index.html", "w").write(statement(A11Y["en"]))
 open(OUT + "/index.html", "w").write(page(HE))
 open(OUT + "/en/index.html", "w").write(page(EN))
 print("ok")
