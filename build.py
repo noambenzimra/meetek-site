@@ -6,6 +6,10 @@ Styles live in public/styles.css, behaviour in public/site.js.
 import os
 from urllib.parse import quote
 
+# Accessibility statement pages (/accessibility/, /en/accessibility/) and their footer link.
+# Off while Meetek is exempt (turnover under 100K NIS). Set to True to publish them again.
+SHOW_A11Y = False
+
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
 
 ICONS = {
@@ -179,6 +183,7 @@ EN = dict(
 
 def page(t):
     b = t["base"]
+    a11y_footer = f'<a href="{t["a11y_href"]}">{t["a11y_link"]}</a> · ' if SHOW_A11Y else ""
     nav = "".join(f'<a href="{h}">{l}</a>' for h, l in t["nav"])
     stats = "".join(f'<div class="stat reveal"><div class="ic">{ic(i)}</div><b>{n}</b><span>{s}</span></div>' for i, n, s in t["stats"])
     pains = "".join(f'<article class="pain {c} reveal"><div class="pi"><span>{ic("x",18,2.2)}</span><span>{ic(i,18)}</span></div><h3>{h}</h3><p>{p}</p></article>' for c, i, h, p in t["pains"])
@@ -398,7 +403,7 @@ def page(t):
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Meetek">{LOGO}Meetek</a>
     <span>{t["foot"]} · <a href="mailto:noam@meetek.ai">noam@meetek.ai</a></span>
-    <span>© <span id="y">2026</span> Meetek · <a href="{t["a11y_href"]}">{t["a11y_link"]}</a> · <a href="{t["other"]}" lang="{t["other_lang"]}">{t["foot_other"]}</a></span>
+    <span>© <span id="y">2026</span> Meetek · {a11y_footer}<a href="{t["other"]}" lang="{t["other_lang"]}">{t["foot_other"]}</a></span>
   </div>
 </footer>
 
@@ -521,10 +526,14 @@ def statement(t):
 """
 
 os.makedirs(OUT + "/en", exist_ok=True)
-os.makedirs(OUT + "/accessibility", exist_ok=True)
-os.makedirs(OUT + "/en/accessibility", exist_ok=True)
-open(OUT + "/accessibility/index.html", "w").write(statement(A11Y["he"]))
-open(OUT + "/en/accessibility/index.html", "w").write(statement(A11Y["en"]))
+import shutil
+for d in ("/accessibility", "/en/accessibility"):
+    shutil.rmtree(OUT + d, ignore_errors=True)
+if SHOW_A11Y:
+    os.makedirs(OUT + "/accessibility", exist_ok=True)
+    os.makedirs(OUT + "/en/accessibility", exist_ok=True)
+    open(OUT + "/accessibility/index.html", "w").write(statement(A11Y["he"]))
+    open(OUT + "/en/accessibility/index.html", "w").write(statement(A11Y["en"]))
 open(OUT + "/index.html", "w").write(page(HE))
 open(OUT + "/en/index.html", "w").write(page(EN))
 print("ok")
