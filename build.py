@@ -52,11 +52,11 @@ HE = dict(
  skip="דילוג לתוכן", home="Meetek, לראש העמוד", nav_label="ניווט ראשי",
  nav=[("#work","על מה עובדים"),("#how","איך זה עובד"),("#students","הסטודנטים"),("#faq","שאלות נפוצות")],
  theme_label="מצב כהה או בהיר", cta_nav="לתיאום פגישה",
- badge="סטודנטים מצטיינים מהטכניון, אצלכם במשרד",
- h1a="AI שעובד אצלכם במשרד.", h1b="לא רק במצגת.",
- lead="Meetek מוצאת לכם סטודנט מצטיין להנדסה מהטכניון שיעבוד אצלכם, בדרך כלל 3 ימים בשבוע. הוא לומד איך העבודה נעשית היום, מוצא איפה הולכות השעות, ובונה את הכלים שמחזירים לכם אותן.",
+ badge="לחברות הנדסה, ביצוע ותשתיות",
+ h1a="סטודנט מצטיין מהטכניון,", h1b="שיבנה לכם תוכנות ואוטומציות עם AI",
+ lead="הסטודנט עובד אצלכם במשרד, בדרך כלל 3 ימים בשבוע. הוא לומד איך העבודה נעשית היום, מוצא איפה הולכות השעות, ובונה את הכלים שמחזירים לכם אותן. אנחנו מוצאים, מסננים ומתאימים אותו בשבילכם.",
  cta1="לפגישת היכרות של חצי שעה", cta2="איך זה עובד",
- stats=[("search","30","דקות של פגישת היכרות, ללא עלות"),("clock","3","ימים בשבוע אצלכם במשרד"),("shield","0","התחייבות לתקופה מינימלית")],
+ stats=[("search","30","דקות של פגישת היכרות, ללא עלות"),("clock","3","ימים בשבוע אצלכם במשרד"),("shield","15%","העליונים בטכניון, לפי ממוצע הציונים בפקולטה")],
  p_badge="הבעיה", p_h2a="AI הוא בדרך כלל", p_h2b="רק דיבורים",
  p_lead="כולם מדברים על בינה מלאכותית. מעט חברות באמת משתמשות בה בעבודה היומיומית.",
  pains=[("r","clock","ניסיתם ChatGPT, וזה נשאר בטאב בדפדפן","העבודה עצמה נשארה אותו דבר: אקסל, מסמכים והעתק-הדבק."),
@@ -64,7 +64,7 @@ HE = dict(
         ("p","coins","יועצים נותנים מצגת, אבל לא בונים","ההמלצות נשארות על הנייר, והתהליכים לא משתנים.")],
  callout_a="אנחנו לא נותנים לכם מפת דרכים.", callout_b="אנחנו יושבים אצלכם ובונים.",
  s_badge="על מה הסטודנט עובד", s_h2a="התהליכים שאוכלים", s_h2b="לכם את השבוע",
- s_lead="הסטודנט מתחיל מהתהליך שהכי כואב לכם, ומשם ממשיך לבא בתור.",
+ s_lead="הסטודנט מתחיל מהתהליך שהכי כואב לכם, ומשם ממשיך לתהליך הבא בתור.",
  services=[("doc","מכרזים","איתור מכרזים רלוונטיים, סיכום של כל מכרז לעמוד אחד, בדיקת תנאי סף ורשימת מסמכים שנבדקת אוטומטית."),
            ("calc","כתבי כמויות וחשבונות חלקיים","הפקת חשבון חלקי מתוך כתב הכמויות והמדידות, בלי להקליד הכול מחדש בכל חודש."),
            ("chart","טפסים, דוחות ויומני עבודה","טפסי רגולציה, דוחות למזמין ויומני עבודה שנוצרים מהנתונים שכבר יש לכם."),
@@ -80,27 +80,30 @@ HE = dict(
  sample_foot="המחשה בלבד. כך נראה תוצר טיפוסי של סטודנט שמטפל אצלכם במכרזים.",
  h_badge="איך זה עובד", h_h2a="מפגישה אחת", h_h2b="לסטודנט שעובד אצלכם",
  steps=[("search","שלב 1","פגישת היכרות","מבינים איך אתם עובדים היום ואיפה הולך הזמן.","30 דקות, ללא עלות"),
-        ("handshake","שלב 2","התאמת סטודנט","בוחרים את הסטודנט שמתאים לתחום ולאנשים שלכם.","מתוך מי שעבר ראיונות"),
-        ("bolt","שלב 3","החודש הראשון","ממפים תהליכים ומתחילים מזה שיגרום לכם להרוויח הכי הרבה.","תוצאה כבר בהתחלה"),
-        ("rocket","שלב 4","ליווי שוטף","ממשיכים ללוות אתכם ואת הסטודנט גם אחרי הקליטה.","3 ימים בשבוע")],
+        ("handshake","שלב 2","התאמת סטודנט","בוחרים את הסטודנט שמתאים לתחום ולאנשים שלכם.","מתוך 15% העליונים בטכניון"),
+        ("bolt","שלב 3","החודש הראשון","ממפים תהליכים, ובתוך 30 יום הסטודנט מציג לכם את התהליך הראשון שהוא הופך לאוטומטי.","תהליך ראשון בתוך 30 יום"),
+        ("rocket","שלב 4","עבודה שוטפת","הסטודנט ממשיך לתהליך הבא בתור, וכל חודש עוד עבודה ידנית יורדת לכם מהשולחן.","3 ימים בשבוע")],
  st_badge="למה הקמנו את Meetek", st_h2a="התחלנו", st_h2b="מבעיה אמיתית",
  quote=["\"התחלתי לעבוד בחברת תשתיות ומצאתי מהנדסים מצוינים שמבזבזים שעות על עבודה ידנית: הכול עובר בין כמה ידיים עד שמסמך אחד יוצא. בניתי להם מערכת, ותהליך שלקח ימים לוקח היום דקות.",
         "אז הבנתי שיש מאות חברות כאלה. ומהצד השני יש סטודנטים מצוינים בטכניון שמחפשים בדיוק אתגר כזה. Meetek מחברת בין השניים.\""],
  avatar="נ", who="נועם בן זמרה", role="מנכ\"ל ומייסד שותף, Meetek",
  su_badge="הסטודנטים", su_h2a="לא כל סטודנט.", su_h2b="הסטודנט הנכון.",
- su_who_h="מי הם", su_who="סטודנטים להנדסה ולמדעי המחשב בטכניון. אנחנו מחפשים שילוב נדיר: יכולת טכנית גבוהה, סבלנות להבין איך עסק עובד באמת, ויכולת לדבר עם אנשים שלא באים מעולם ההייטק.",
+ su_who_h="מי הם", su_who="סטודנטים להנדסה ולמדעי המחשב בטכניון, מ-15% העליונים בפקולטה לפי ממוצע הציונים, אחרי ראיון אישי. אנחנו מחפשים שילוב נדיר: יכולת טכנית גבוהה, סבלנות להבין איך עסק עובד באמת, ויכולת לדבר עם אנשים שלא באים מעולם ההייטק.",
  pick_label="מתוך עשרה מועמדים, אחד מתקבל", pick_cap_b="1 מכל 10", pick_cap="מועמדים עובר את הראיונות שלנו ומתקבל",
- su_you_h="מה זה אומר בשבילכם", su_you=["אנחנו עושים בשבילכם את כל תהליך הגיוס: מיון, ראיונות והתאמה. אתם פוגשים רק מועמדים שמתאימים.","הסטודנט עובד אצלכם, בדרך כלל 3 ימים בשבוע, ומכיר את האנשים ואת המערכות מבפנים.","אין התחייבות לתקופת העסקה מינימלית. המטרה שלנו היא שהוא יישאר אצלכם לפחות עד סוף התואר.","אנחנו ממשיכים ללוות אתכם ואת הסטודנט גם אחרי הקליטה."],
- c_badge="השוואה", c_h2a="למה לא פשוט לגייס,", c_h2b="או להביא יועץ?",
+ su_you_h="מה זה אומר בשבילכם", su_you=["אנחנו עושים בשבילכם את כל תהליך הגיוס: מיון, ראיונות והתאמה. אתם פוגשים רק מועמדים שמתאימים.","הסטודנט עובד אצלכם, בדרך כלל 3 ימים בשבוע, ומכיר את האנשים ואת המערכות מבפנים.","אין התחייבות לתקופת העסקה מינימלית. המטרה שלנו היא שהוא יישאר אצלכם לפחות עד סוף התואר.","ההתחייבות שלנו: בתוך 30 יום הסטודנט מציג לכם את התהליך הראשון שהוא הופך לאוטומטי. לא קרה? החודש הראשון בלי דמי השמה. ולא מתאים? מחליפים סטודנט בלי עלות נוספת."],
+ c_badge="השוואה", c_h2a="למה לא חברת ייעוץ,", c_h2b="או גיוס לבד?",
  c_head=["קריטריון","גיוס לבד","יועץ חיצוני","Meetek"],
- c_rows=[("מי מוצא את המועמד","אתם, על חשבון הזמן שלכם","לא רלוונטי","אנחנו, מתוך סטודנטים מצטיינים בטכניון"),
+ c_rows=[("מי מוצא את המועמד","אתם, על חשבון הזמן שלכם","לא רלוונטי","אנחנו, מתוך 15% העליונים בטכניון"),
          ("נמצא אצלכם","כן","לרוב לא","3 ימים בשבוע, במשרד"),
          ("מה מקבלים","תלוי במי שגייסתם","המלצות ומצגת","כלים שנבנים ומוטמעים בפועל"),
+         ("מה נשאר אצלכם","מה שהעובד יודע","היועץ בונה, גובה ועוזב","מישהו שמכיר את העבודה מבפנים וממשיך לשפר"),
+         ("התחייבות","אין","על שעות, לא על תוצאה","תהליך ראשון בתוך 30 יום, או חודש בלי דמי השמה"),
          ("עלות","מודעות, זמן ראיונות, ניסוי וטעייה","פרויקט סגור, תשלום גבוה לשעה","דמי השמה לפי שעות עבודה, רק בשנה הראשונה")],
  f_badge="שאלות נפוצות", f_h2a="מה ששואלים אותנו", f_h2b="בפגישה הראשונה",
  faq=[("כמה זה עולה?","הסטודנט מועסק אצלכם, ואת השכר שלו אתם קובעים איתו. דמי ההשמה שלנו נגזרים משעות העבודה שלו, רק בשנה הראשונה, בלי דמי הצטרפות ובלי התחייבות לתקופה מינימלית. נפרט בפגישת ההיכרות."),
+      ("ומה אם זה לא עובד?","בתוך 30 יום הסטודנט מציג לכם את התהליך הראשון שהוא הופך לאוטומטי. אם זה לא קרה, החודש הראשון בלי דמי השמה. ואם הסטודנט לא מתאים, מחליפים אותו בלי עלות נוספת."),
       ("ניסינו AI וזה לא עבד. למה שהפעם זה יהיה אחרת?","כי הפעם יש מישהו שיושב אצלכם. כלי AI לבד לא יודעים איך נראה כתב הכמויות שלכם, איפה נשמרים המסמכים, או מי צריך לאשר מה. הסטודנט לומד את זה מבפנים, ובונה את הכלים סביב העבודה האמיתית שלכם."),
-      ("למה סטודנט ולא מהנדס בכיר?","כי מה שצריך כאן הוא מישהו חד, סקרן וזמין, שיושב אצלכם שלושה ימים בשבוע ולומד את העסק. כל סטודנט עובר אצלנו ראיונות, ואנחנו מלווים אותו לאורך כל הדרך."),
+      ("למה סטודנט ולא מהנדס בכיר?","כי מה שצריך כאן הוא מישהו חד, סקרן וזמין, שיושב אצלכם שלושה ימים בשבוע ולומד את העסק. אנחנו בוחרים רק מ-15% העליונים בטכניון, וכל סטודנט עובר אצלנו ראיון אישי."),
       ("מה לגבי סודיות המידע שלנו?","לפני תחילת העבודה חותמים על הסכם סודיות. הסטודנט עובד רק על המערכות והמסמכים שתאשרו לו."),
       ("צריך מחלקת IT או מערכות חדשות?","לא. הסטודנט עובד מעל מה שכבר יש לכם: אקסל, Priority, חשבשבת, מייל ותיקיות משותפות."),
       ("ומה עם הלימודים? הוא לא יתחלף כל כמה חודשים?","אנחנו מתאימים את היקף המשרה לדרישות שלכם, וברוב המקרים סטודנט עובד כ-3 ימים בשבוע לצד התואר. המטרה היא שהסטודנט שנתאים לכם יישאר אצלכם לפחות עד סוף התואר, ואם שני הצדדים מרוצים, גם אחרי זה.")],
@@ -121,11 +124,11 @@ EN = dict(
  skip="Skip to content", home="Meetek, back to top", nav_label="Main",
  nav=[("#work","What we do"),("#how","How it works"),("#students","Our students"),("#faq","FAQ")],
  theme_label="Toggle dark or light mode", cta_nav="Book a meeting",
- badge="Top Technion students, in your office",
- h1a="AI that works in your office.", h1b="Not just in a slide deck.",
- lead="Meetek finds you a top engineering student from the Technion to work at your company, usually 3 days a week. They learn how the work gets done today, find where the hours go, and build the tools that give those hours back.",
+ badge="For engineering, construction and infrastructure firms",
+ h1a="A top Technion student", h1b="who builds you software and AI automations",
+ lead="The student works in your office, usually 3 days a week. They learn how the work gets done today, find where the hours go, and build the tools that give those hours back. We find, screen and match them for you.",
  cta1="Book a 30-minute intro", cta2="How it works",
- stats=[("search","30","minute intro meeting, free of charge"),("clock","3","days a week in your office"),("shield","0","minimum employment period")],
+ stats=[("search","30","minute intro meeting, free of charge"),("clock","3","days a week in your office"),("shield","15%","top of the Technion, by faculty grade average")],
  p_badge="The problem", p_h2a="AI is often just", p_h2b="talk",
  p_lead="Everyone talks about artificial intelligence. Few companies actually use it in their day-to-day work.",
  pains=[("r","clock","You tried ChatGPT, and it stayed in a browser tab","The work itself stayed the same: spreadsheets, documents and copy-paste."),
@@ -149,27 +152,30 @@ EN = dict(
  sample_foot="Illustration only. This is what a typical output looks like when one of our students handles your tenders.",
  h_badge="How it works", h_h2a="From one meeting", h_h2b="to a student in your office",
  steps=[("search","Step 1","Intro meeting","We learn how you work today and where the time goes.","30 minutes, free"),
-        ("handshake","Step 2","Student match","We pick the student who fits your field and your people.","From those who passed interviews"),
-        ("bolt","Step 3","The first month","We map your processes and start with the one that will make you the most money.","Results early on"),
-        ("rocket","Step 4","Ongoing support","We keep supporting you and the student after they join.","3 days a week")],
+        ("handshake","Step 2","Student match","We pick the student who fits your field and your people.","From the top 15% at the Technion"),
+        ("bolt","Step 3","The first month","We map your processes, and within 30 days the student shows you the first process they have automated.","First process within 30 days"),
+        ("rocket","Step 4","Ongoing work","The student moves on to the next process, and every month more manual work comes off your desk.","3 days a week")],
  st_badge="Why we started Meetek", st_h2a="It started with", st_h2b="a real problem",
  quote=["\"I started working at an infrastructure company and found excellent engineers losing hours to manual work: everything passed through several hands before a single document went out. I built them a system, and a process that used to take days now takes minutes.",
         "That's when I realized there are hundreds of companies like this. And on the other side, there are brilliant Technion students looking for exactly this kind of challenge. Meetek connects the two.\""],
  avatar="N", who="Noam Ben Zimra", role="CEO and co-founder, Meetek",
  su_badge="Our students", su_h2a="Not just any student.", su_h2b="The right one.",
- su_who_h="Who they are", su_who="Engineering and computer science students at the Technion. We look for a rare combination: strong technical ability, the patience to understand how a business really works, and the ability to talk with people who don't come from tech.",
+ su_who_h="Who they are", su_who="Engineering and computer science students at the Technion, from the top 15% of their faculty by grade average, after a personal interview. We look for a rare combination: strong technical ability, the patience to understand how a business really works, and the ability to talk with people who don't come from tech.",
  pick_label="Out of ten candidates, one is accepted", pick_cap_b="1 in 10", pick_cap="candidates passes our interviews and is accepted",
- su_you_h="What this means for you", su_you=["We run the whole recruiting process for you: screening, interviews and matching. You only meet candidates who fit.","The student works at your company, usually 3 days a week, and gets to know your people and systems from the inside.","There is no minimum employment period. Our goal is for them to stay with you at least until they graduate.","We keep supporting you and the student after they join."],
- c_badge="Comparison", c_h2a="Why not just hire,", c_h2b="or bring in a consultant?",
+ su_you_h="What this means for you", su_you=["We run the whole recruiting process for you: screening, interviews and matching. You only meet candidates who fit.","The student works at your company, usually 3 days a week, and gets to know your people and systems from the inside.","There is no minimum employment period. Our goal is for them to stay with you at least until they graduate.","Our commitment: within 30 days the student shows you the first process they have automated. If not, the first month is free of placement fees. Not the right fit? We replace the student at no extra cost."],
+ c_badge="Comparison", c_h2a="Why not a consulting firm,", c_h2b="or hiring on your own?",
  c_head=["Criteria","Hiring on your own","External consultant","Meetek"],
- c_rows=[("Who finds the candidate","You, on your own time","Not applicable","We do, from top Technion students"),
+ c_rows=[("Who finds the candidate","You, on your own time","Not applicable","We do, from the top 15% at the Technion"),
          ("On site","Yes","Usually not","3 days a week, in your office"),
          ("What you get","Depends on who you hired","Recommendations and a deck","Tools actually built and deployed"),
+         ("What stays with you","Whatever the hire knows","The consultant builds, bills and leaves","Someone who knows the work from the inside and keeps improving it"),
+         ("Commitment","None","Hours, not outcomes","First process within 30 days, or a month without placement fees"),
          ("Cost","Job ads, interview time, trial and error","Fixed project, high hourly rate","A placement fee per hour worked, first year only")],
  f_badge="FAQ", f_h2a="What people ask us", f_h2b="in the first meeting",
  faq=[("How much does it cost?","The student is employed by you, and you agree their salary with them. Our placement fee is based on the hours they work, for the first year only, with no setup fee and no minimum employment period. We'll go over it in the intro meeting."),
+      ("What if it doesn't work?","Within 30 days the student shows you the first process they have automated. If that doesn't happen, the first month is free of placement fees. And if the student isn't the right fit, we replace them at no extra cost."),
       ("We tried AI and it didn't work. Why would this be different?","Because this time someone sits in your office. AI tools on their own don't know what your bill of quantities looks like, where documents are stored, or who signs off on what. The student learns all of that from the inside and builds the tools around your real work."),
-      ("Why a student and not a senior engineer?","Because what you need here is someone sharp, curious and available, who sits with you three days a week and learns the business. Every student is interviewed by us, and we mentor them all the way."),
+      ("Why a student and not a senior engineer?","Because what you need here is someone sharp, curious and available, who sits with you three days a week and learns the business. We only pick from the top 15% at the Technion, and every student has a personal interview with us."),
       ("What about the confidentiality of our data?","We sign a non-disclosure agreement before work begins. The student only works on the systems and documents you approve."),
       ("Do we need an IT department or new systems?","No. The student works on top of what you already use: spreadsheets, your ERP and accounting software, email and shared folders."),
       ("What about their studies? Won't they leave after a few months?","We match the workload to your needs, and most students work about 3 days a week alongside their degree. The goal is for the student we match to stay with you at least until they graduate, and longer if both sides are happy.")],
@@ -283,6 +289,16 @@ def page(t):
   </div>
 </section>
 
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="badge">{ic("chart",16)}{t["c_badge"]}</span>
+      <h2>{t["c_h2a"]} <span class="grad-text">{t["c_h2b"]}</span></h2>
+    </div>
+    <div class="table-wrap reveal"><table><thead>{thead}</thead><tbody>{trows}</tbody></table></div>
+  </div>
+</section>
+
 <section class="block" id="work" style="padding-top:0">
   <div class="wrap">
     <div class="head reveal">
@@ -353,16 +369,6 @@ def page(t):
         <ul>{you}</ul>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="block" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge">{ic("chart",16)}{t["c_badge"]}</span>
-      <h2>{t["c_h2a"]} <span class="grad-text">{t["c_h2b"]}</span></h2>
-    </div>
-    <div class="table-wrap reveal"><table><thead>{thead}</thead><tbody>{trows}</tbody></table></div>
   </div>
 </section>
 
