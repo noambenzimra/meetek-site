@@ -1,208 +1,1246 @@
 <!doctype html>
-<html lang="he" dir="rtl" data-theme="dark">
+<html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meetek | הטמעת AI בחברות הנדסה, ביצוע ותשתיות</title>
-<meta name="description" content="Meetek מוצאת לכם סטודנט מצטיין להנדסה מהטכניון שיעבוד אצלכם כ-3 ימים בשבוע, ימצא איפה הולכות השעות ויבנה את הכלים שמחזירים לכם אותן.">
-<meta property="og:title" content="כמה שעות בשבוע הולכות אצלכם על עבודה ידנית?">
-<meta property="og:description" content="סטודנט מצטיין מהטכניון יושב אצלכם 3 ימים בשבוע ומטמיע בינה מלאכותית בעבודה האמיתית. פגישת היכרות ללא עלות.">
-<meta name="twitter:title" content="כמה שעות בשבוע הולכות אצלכם על עבודה ידנית?">
-<meta name="twitter:description" content="סטודנט מצטיין מהטכניון יושב אצלכם 3 ימים בשבוע ומטמיע בינה מלאכותית בעבודה האמיתית. פגישת היכרות ללא עלות.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://meetek.ai/">
-<meta property="og:locale" content="he_IL">
-<meta property="og:site_name" content="Meetek">
-<meta property="og:image" content="https://meetek.ai/og.png">
-<meta property="og:image:secure_url" content="https://meetek.ai/og.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Meetek">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://meetek.ai/og.png">
-<meta name="theme-color" content="#0A1020">
-<link rel="alternate" hreflang="en" href="https://meetek.ai/en/">
+<title>Meetek | סוכנות AI לקבלנים, חברות בנייה, הנדסה ותשתיות</title>
+<meta name="description" content="Meetek היא סוכנות AI לקבלנים ולחברות בנייה, הנדסה ותשתיות. אנחנו מוצאים איפה החברה מאבדת זמן וכסף, ובונים תוכנות ואוטומציות שסוגרות את הפער.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meetek.ai/">
+<meta property="og:title" content="Meetek | סוכנות AI לחברות בנייה, הנדסה ותשתיות">
+<meta property="og:description" content="אנחנו ממפים איפה הולך הזמן במשרד, ובונים לכם תוכנות ואוטומציות שעושות את העבודה הידנית.">
+<meta property="og:image" content="https://meetek.ai/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<script>try{if(localStorage.getItem('meetek-theme')==='light')document.documentElement.removeAttribute('data-theme')}catch(e){}</script>
-</head>
-<body class="no-js">
-<div class="page-bg" aria-hidden="true"></div>
-<a class="skip" href="#main">דילוג לתוכן</a>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@600&family=IBM+Plex+Sans+Hebrew:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0A0A; --ink-2:#212121; --graphite:#575757; --smoke:#8A8A8A; --line:#E5E5E5; --line-2:#EDEDED;
+  --mist:#F4F4F2; --white:#FFFFFF; --sand:#A8927C; --forest:#193A29; --iris:#79648C; --slate:#839CB2;
+  --ok:#1E7A4C; --ok-bg:#E7F3EC; --warn:#9A6A12; --warn-bg:#FBF1DC; --bad:#B42318; --bad-bg:#FBE9E7;
+  --sans:'IBM Plex Sans Hebrew', ui-sans-serif, system-ui, sans-serif;
+  --mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --r-sm:8px; --r:16px; --r-lg:24px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{overflow-x:clip}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+img,svg{display:block}
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:24px}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--graphite)}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:2px;background:currentColor}
+h1,h2,h3,h4{margin:0;font-weight:300;letter-spacing:-.02em}
+p{margin:0}
+.h-xl{font-size:clamp(46px,7.4vw,108px);line-height:.98;letter-spacing:-.035em;font-weight:200}
+.h-lg{font-size:clamp(36px,5vw,68px);line-height:1.04;letter-spacing:-.025em}
+.h-md{font-size:clamp(28px,3.2vw,44px);line-height:1.12}
+.lead{font-size:clamp(17px,1.5vw,20px);line-height:1.55;color:var(--graphite)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 20px;border-radius:var(--r-sm);font-size:16px;font-weight:500;border:1px solid transparent;cursor:pointer;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease)}
+.btn:active{transform:translateY(1px)}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#2a2a2a}
+.btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:#E9E9E6}
+.btn-ghost{border-color:#C7C7C7;color:var(--graphite);background:transparent}.btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
+.btn-ghost-dark{border-color:#3A3A3A;color:#fff;background:transparent}.btn-ghost-dark:hover{border-color:#fff}
+.btn .arr{transition:transform .3s var(--ease)}
+.btn:hover .arr{transform:translateX(-4px)}
+:focus-visible{outline:2px solid #4C7DFF;outline-offset:3px;border-radius:6px}
 
-<header class="site" id="top">
-  <div class="nav">
-    <a class="brand" href="#top" aria-label="Meetek, לראש העמוד"><svg width="34" height="24" viewBox="0 0 30 22" aria-hidden="true"><circle class="c1" cx="10" cy="11" r="8.6" fill="none" stroke-width="2.6"/><circle class="c2" cx="20" cy="11" r="8.6" fill="none" stroke-width="2.6"/></svg>Meetek</a>
-    <nav class="nav-links" aria-label="ניווט ראשי"><a href="#work">על מה עובדים</a><a href="#how">איך זה עובד</a><a href="#students">הסטודנטים</a><a href="#faq">שאלות נפוצות</a></nav>
-    <div class="nav-end">
-      <a class="icon-btn" href="en/" lang="en" hreflang="en">EN</a>
-      <button class="icon-btn theme" type="button" aria-label="מצב כהה או בהיר"><span class="moon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></span><span class="sun"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span></button>
-      <a class="btn btn-primary" href="#contact">לתיאום פגישה</a>
+/* NAV */
+.nav{position:fixed;inset-inline:0;top:0;z-index:50;transition:background .35s var(--ease),border-color .35s var(--ease),color .35s var(--ease);border-bottom:1px solid transparent;color:#fff}
+.nav.solid{background:rgba(255,255,255,.82);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);border-color:var(--line);color:var(--ink)}
+.nav.night{background:rgba(10,10,10,.78);backdrop-filter:saturate(1.4) blur(16px);-webkit-backdrop-filter:saturate(1.4) blur(16px);border-color:#1F1F1F}
+.nav-in{height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:500;font-size:21px;letter-spacing:-.01em;direction:ltr}
+.logo-mark{width:34px;height:24px}
+.nav-l{display:flex;align-items:center;gap:48px}
+.nav-links{display:flex;gap:30px;font-size:15px}
+.nav-links a{opacity:.72;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.nav-cta{display:flex;gap:8px;align-items:center}
+.nav .btn{height:40px;font-size:15px;padding:0 16px}
+.nav:not(.solid) .btn-dark{background:#fff;color:var(--ink)}
+.nav:not(.solid) .btn-ghost{border-color:#3A3A3A;color:#BDBDBD}
+.nav:not(.solid) .btn-ghost:hover{border-color:#fff;color:#fff}
+
+/* HERO */
+.hero{position:relative;background:var(--ink);color:#fff;padding-top:148px;overflow:hidden;isolation:isolate}
+.hero-grid{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(to right,rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.06) 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 80%);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000 30%,transparent 80%)}
+.hero-glow{position:absolute;z-index:-1;width:900px;height:600px;left:50%;top:40%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(168,146,124,.18),transparent);filter:blur(20px)}
+.hero-top{display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px}
+.pill{display:inline-flex;align-items:center;gap:10px;min-height:34px;padding:4px 14px 4px 6px;text-align:start;line-height:1.35;border:1px solid #2E2E2E;border-radius:999px;font-size:14px;color:#CFCFCF;background:rgba(255,255,255,.03)}
+.pill b{font-weight:500;color:#fff;background:#1F1F1F;border-radius:999px;padding:3px 10px;font-size:12px}
+.hero h1{max-width:1100px}
+.hero h1 em{font-style:normal;color:#8D8D8D}
+.hero .lead{color:#A9A9A9;max-width:620px}
+.cta-form{display:flex;gap:8px;padding:6px;border:1px solid #2E2E2E;background:#121212;border-radius:12px;width:min(520px,100%)}
+.cta-form input{flex:1;min-width:0;height:44px;border:0;background:transparent;padding:0 12px;color:#fff;font-size:16px;outline:none}
+.cta-form input::placeholder{color:#7A7A7A}
+.cta-form .btn{height:44px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.btn-lg{height:54px;padding:0 24px;font-size:17px}
+.tabs.tabs-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero-note{font-size:13px;color:#7A7A7A;display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.hero-note span{display:inline-flex;align-items:center;gap:6px}
+.hero-note svg{width:14px;height:14px}
+
+/* APP MOCKUP */
+.stage{position:relative;margin-top:72px;perspective:2000px}
+.app{position:relative;background:#fff;color:var(--ink);border-radius:18px 18px 0 0;border:1px solid #2A2A2A;border-bottom:0;box-shadow:0 -1px 0 rgba(255,255,255,.08) inset,0 40px 120px -20px rgba(0,0,0,.6);overflow:hidden;transform:rotateX(8deg) translateY(30px);transform-origin:50% 100%;transition:transform 1.4s var(--ease)}
+.app.in{transform:rotateX(0) translateY(0)}
+.app-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:48px;padding:0 16px;border-bottom:1px solid var(--line);background:#FAFAF9}
+.crumbs{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--graphite);white-space:nowrap;overflow:hidden}
+.crumbs b{color:var(--ink);font-weight:500}
+.crumbs i{font-style:normal;color:#C2C2C2}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--ok);background:var(--ok-bg);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(30,122,76,.5)}100%{box-shadow:0 0 0 8px rgba(30,122,76,0)}}
+.app-body{display:grid;grid-template-columns:220px minmax(0,1fr)}
+.side{border-inline-end:1px solid var(--line);padding:16px 12px;display:flex;flex-direction:column;gap:2px;background:#FCFCFB}
+.side .mono{color:var(--smoke);padding:10px 10px 8px}
+.side a{display:flex;align-items:center;justify-content:space-between;gap:10px;height:36px;padding:0 10px;border-radius:8px;font-size:14px;color:var(--graphite)}
+.side a span:first-child{display:flex;align-items:center;gap:10px}
+.side a svg{width:16px;height:16px}
+.side a.on{background:var(--ink);color:#fff}
+.side a .n{font-family:var(--mono);font-size:11px;opacity:.7}
+.main{padding:24px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.doc-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px}
+.doc-head h3{font-size:24px;font-weight:400;letter-spacing:-.01em}
+.doc-head .mono{color:var(--smoke);margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px;border:1px solid var(--line);border-radius:8px;font-size:12.5px;color:var(--graphite);background:#fff;white-space:nowrap}
+.chip b{color:var(--ink);font-weight:500}
+.grid3{display:grid;grid-template-columns:1.1fr 1fr 1.5fr;gap:12px}
+.card{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card-h{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card-h h4{font-size:14px;font-weight:500;letter-spacing:0}
+.card-h .mono{color:var(--smoke)}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.checks li{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;line-height:1.4}
+.ic{flex:none;width:20px;height:20px;border-radius:6px;display:grid;place-items:center}
+.ic svg{width:12px;height:12px}
+.ic.ok{background:var(--ok-bg);color:var(--ok)}.ic.warn{background:var(--warn-bg);color:var(--warn)}.ic.bad{background:var(--bad-bg);color:var(--bad)}
+.checks small{display:block;color:var(--warn);font-size:12px}
+.verdict{background:var(--forest);color:#fff;border-color:var(--forest);justify-content:space-between}
+.verdict .mono{color:rgba(255,255,255,.6)}
+.verdict .big{font-size:44px;font-weight:300;letter-spacing:-.03em;line-height:1}
+.verdict p{font-size:13.5px;color:rgba(255,255,255,.78);line-height:1.5}
+.meter{height:6px;border-radius:99px;background:rgba(255,255,255,.15);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:#9FD3B4;border-radius:inherit;transition:width 1.6s var(--ease) .4s}
+.app.in .meter i{width:var(--w)}
+.verdict .row{display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.7)}
+table.boq{width:100%;border-collapse:collapse;font-size:12.5px}
+.boq th{font-weight:500;color:var(--smoke);text-align:start;padding:0 0 8px;font-size:12px}
+.boq td{padding:9px 0;border-top:1px solid var(--line-2);vertical-align:middle;white-space:nowrap}
+.boq td.d{white-space:normal;padding-inline-end:10px;color:var(--ink)}
+.boq td.c{font-family:var(--mono);font-size:11.5px;color:var(--smoke);padding-inline-end:10px;direction:ltr;text-align:end}
+.boq td.p{font-family:var(--mono);font-size:12px;direction:ltr;text-align:end;padding-inline-start:8px}
+.conf{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;color:var(--ok)}
+.conf i{width:28px;height:4px;border-radius:9px;background:var(--line);position:relative;overflow:hidden}
+.conf i::after{content:"";position:absolute;inset:0;width:var(--c);background:currentColor;border-radius:inherit}
+.boq tr.flag td{background:var(--warn-bg)}
+.boq tr.flag td:first-child{border-start-start-radius:6px;border-end-start-radius:6px;padding-inline-start:8px}
+.boq tr.flag td:last-child{border-start-end-radius:6px;border-end-end-radius:6px;padding-inline-end:8px}
+.tag-warn{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--warn);font-weight:500}
+.progress{display:flex;align-items:center;gap:12px;font-size:12.5px;color:var(--graphite)}
+.progress .bar{flex:1;height:4px;background:var(--line-2);border-radius:9px;overflow:hidden}
+.progress .bar i{display:block;height:100%;width:0;background:var(--ink);transition:width 2s var(--ease) .6s}
+.app.in .progress .bar i{width:94.7%}
+.scan{position:absolute;inset-inline:0;height:120px;top:-120px;background:linear-gradient(to bottom,transparent,rgba(25,58,41,.06),transparent);pointer-events:none;animation:scan 5.5s var(--ease) infinite 1.5s}
+@keyframes scan{0%{top:-120px}70%,100%{top:100%}}
+.demo-badge{position:absolute;top:60px;inset-inline-start:236px;z-index:2}
+
+/* STRIP */
+.strip{border-bottom:1px solid var(--line);background:#fff}
+.strip-in{display:flex;align-items:center;gap:32px;padding-block:28px;overflow:hidden}
+.strip .label{flex:none;font-size:14px;color:var(--graphite)}
+.marquee{flex:1;overflow:hidden;-webkit-mask-image:linear-gradient(to left,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(to left,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;gap:12px;width:max-content;animation:marq 40s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(50%)}}
+.marquee .chip{height:36px;font-size:14px;padding:0 14px;border-radius:999px;gap:8px}
+.marquee .chip svg{width:16px;height:16px;color:var(--ink)}
+
+/* STATEMENT */
+.statement{padding-block:clamp(120px,14vw,200px)}
+.statement p{font-size:clamp(30px,4.4vw,60px);line-height:1.14;letter-spacing:-.025em;font-weight:300;max-width:1120px}
+.statement .w{color:#D2D2D2;transition:color .4s}
+.statement .w.on{color:var(--ink)}
+
+/* TOOLS */
+.tools{padding-bottom:clamp(100px,12vw,160px)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px 64px;margin-bottom:48px}
+.sec-head .l{display:flex;flex-direction:column;gap:20px;max-width:760px}
+.sec-head .lead{max-width:400px}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:12px}
+.tab{position:relative;text-align:start;background:var(--mist);border:1px solid transparent;border-radius:var(--r);padding:18px 18px 20px;cursor:pointer;display:flex;flex-direction:column;gap:6px;transition:background .3s var(--ease),border-color .3s}
+.tab:hover{background:#ECECEA}
+.tab .mono{color:var(--smoke)}
+.tab b{font-weight:500;font-size:17px}
+.tab small{font-size:13.5px;color:var(--graphite);line-height:1.45}
+.tab[aria-selected="true"]{background:#fff;border-color:var(--ink)}
+.tab .tbar{position:absolute;inset-inline:18px;bottom:10px;height:2px;background:var(--line);border-radius:9px;overflow:hidden;opacity:0}
+.tab[aria-selected="true"] .tbar{opacity:1}
+.tab .tbar i{display:block;height:100%;width:0;background:var(--ink)}
+.tab[aria-selected="true"] .tbar i{animation:tb 7s linear forwards}
+@keyframes tb{to{width:100%}}
+.panel{display:none;border-radius:var(--r-lg);overflow:hidden;min-height:540px}
+.panel.on{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);animation:fade .6s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.panel .txt{padding:48px;display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+.panel .txt h3{font-size:clamp(28px,3vw,40px);line-height:1.12;letter-spacing:-.02em}
+.panel .txt p{font-size:17px;line-height:1.6;opacity:.8;max-width:420px}
+.panel ul.pts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid currentColor;border-color:rgba(255,255,255,.18)}
+.panel ul.pts li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:15px}
+.panel ul.pts li span:last-child{font-family:var(--mono);font-size:12px;opacity:.7;direction:ltr}
+.panel.light ul.pts,.panel.light ul.pts li{border-color:rgba(0,0,0,.14)}
+.panel .vis{padding:40px;display:flex;align-items:center;justify-content:center;position:relative}
+.p-forest{background:var(--forest);color:#fff}
+.p-sand{background:#B7A28C;color:var(--ink)}
+.p-slate{background:#8FA6BA;color:var(--ink)}
+.p-iris{background:var(--iris);color:#fff}
+.vcard{width:100%;max-width:560px;background:#fff;color:var(--ink);border-radius:16px;box-shadow:0 30px 80px -30px rgba(0,0,0,.45);overflow:hidden}
+.vcard-h{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);font-size:13px}
+.vcard-h b{font-weight:500}
+.vcard-b{padding:18px;display:flex;flex-direction:column;gap:12px}
+.pages{display:flex;gap:6px;align-items:flex-end}
+.pages i{flex:1;height:64px;border-radius:6px;background:var(--mist);border:1px solid var(--line);position:relative;overflow:hidden}
+.pages i::before{content:"";position:absolute;inset:10px 8px auto;height:40px;background:repeating-linear-gradient(to bottom,#DADAD6 0 2px,transparent 2px 7px)}
+.pages i.hl::after{content:"";position:absolute;inset:auto 6px 10px;height:10px;background:rgba(159,211,180,.6);border-radius:2px}
+.arrow-down{display:flex;align-items:center;gap:10px;color:var(--smoke);font-size:12px}
+.arrow-down::before,.arrow-down::after{content:"";flex:1;height:1px;background:var(--line)}
+.sum{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.sum div{background:var(--mist);border-radius:10px;padding:12px}
+.sum .mono{color:var(--smoke);display:block;margin-bottom:4px}
+.sum b{font-weight:500;font-size:15px}
+.match3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.match3 div{border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:6px;font-size:13px}
+.match3 .mono{color:var(--smoke)}
+.match3 b{font-family:var(--mono);font-weight:500;font-size:15px;direction:ltr;text-align:end}
+.match3 .diff{border-color:#E7B4AE;background:var(--bad-bg)}
+.match3 .diff b{color:var(--bad)}
+.alert{display:flex;gap:10px;align-items:flex-start;background:var(--bad-bg);color:var(--bad);border-radius:10px;padding:12px;font-size:13.5px;line-height:1.45}
+.alert svg{flex:none;width:16px;height:16px;margin-top:2px}
+.phone-row{display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:center}
+.phone{height:200px;border-radius:20px;border:6px solid var(--ink);background:#E9E6DF;position:relative;overflow:hidden}
+.phone::before{content:"";position:absolute;inset:22px 12px;background:#fff;border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.08);transform:rotate(-3deg)}
+.phone::after{content:"";position:absolute;inset:34px 22px 60px;background:repeating-linear-gradient(to bottom,#D5D2CB 0 2px,transparent 2px 9px);transform:rotate(-3deg)}
+.phone .snap{position:absolute;inset:16px 6px;border:1.5px dashed rgba(25,58,41,.8);border-radius:6px;z-index:2}
+.mini{width:100%;border-collapse:collapse;font-size:12.5px}
+.mini td,.mini th{padding:8px 6px;border-bottom:1px solid var(--line-2);text-align:start;white-space:nowrap}
+.mini th{font-size:12px;color:var(--smoke);font-weight:500}
+.mini tr.new td{background:var(--ok-bg);animation:newrow 2.4s var(--ease) infinite}
+@keyframes newrow{0%,100%{background:var(--ok-bg)}50%{background:#fff}}
+.mini td.n{font-family:var(--mono);direction:ltr;text-align:end}
+.more-note{margin-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:15px;color:var(--graphite)}
+.more-note a{color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:1px}
+
+.svc{padding-bottom:clamp(100px,12vw,160px)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.svc-c{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:32px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.svc-c .mono{color:#8A8A8A}
+.svc-c h3{font-size:26px;font-weight:400;letter-spacing:-.015em}
+.svc-c p{font-size:15.5px;line-height:1.6;color:#B0B0B0;margin-top:10px}
+.svc-c:nth-child(2){background:var(--forest)}
+.svc-c:nth-child(2) p{color:rgba(255,255,255,.75)}
+.areas{margin-top:12px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.area{border:1px solid var(--line);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:20px;transition:border-color .3s,transform .3s var(--ease)}
+.area:hover{border-color:var(--ink);transform:translateY(-3px)}
+.area-h{display:flex;flex-direction:column;gap:16px}
+.area-ic{width:44px;height:44px;border-radius:12px;background:var(--mist);display:grid;place-items:center}
+.area-ic svg{width:20px;height:20px}
+.area h3{font-size:21px;font-weight:500;letter-spacing:-.01em}
+.area ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.area li{display:flex;gap:10px;font-size:15px;line-height:1.5;color:var(--graphite)}
+.area li::before{content:"";flex:none;width:5px;height:5px;border-radius:2px;background:var(--ink);margin-top:9px}
+/* BEFORE AFTER */
+.ba{background:var(--ink);color:#fff;padding-block:clamp(100px,12vw,160px)}
+.ba .lead{color:#A0A0A0}
+.ba .eyebrow{color:#A0A0A0}
+.ba-table{margin-top:56px;border-top:1px solid #2A2A2A}
+.ba-row{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:32px;padding:28px 0;border-bottom:1px solid #2A2A2A;align-items:center}
+.ba-row h4{font-size:20px;font-weight:400;letter-spacing:-.01em}
+.ba-row h4 small{display:block;font-size:14px;color:#8A8A8A;margin-top:4px;letter-spacing:0}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar-l{display:grid;grid-template-columns:90px minmax(0,1fr);gap:16px;align-items:center;font-size:13px;color:#9A9A9A}
+.track{height:30px;display:flex;align-items:center;gap:12px}
+.fill{flex:none;height:100%;width:0;border-radius:6px;transition:width 1.6s var(--ease)}
+.fill.man{background:#3A3A3A}
+.fill.ai{background:#9FD3B4}
+.tl{font-size:14px;white-space:nowrap;color:#BDBDBD;opacity:0;transition:opacity .6s .9s}
+.fill.ai+.tl{color:#9FD3B4}
+.ba-row.in .fill{width:var(--w)}
+.ba-row.in .tl{opacity:1}
+.ba-foot{margin-top:24px;font-size:13px;color:#7A7A7A}
+
+/* PROCESS */
+.process{padding-block:clamp(100px,12vw,160px)}
+.proc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px}
+.proc-l{position:sticky;top:120px;align-self:start;display:flex;flex-direction:column;gap:24px}
+.price-box{margin-top:16px;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px;max-width:420px}
+.price-box .mono{color:var(--smoke)}
+.price-box b{font-size:22px;font-weight:400;letter-spacing:-.01em}
+.price-box p{font-size:14.5px;color:var(--graphite)}
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps::before{content:"";position:absolute;inset-block:12px;inset-inline-start:19px;width:1px;background:var(--line)}
+.steps .rail{position:absolute;top:12px;inset-inline-start:19px;width:1px;background:var(--ink);height:0;transition:height .2s linear}
+.step{position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);gap:24px;padding-bottom:56px}
+.step:last-child{padding-bottom:0}
+.dot{position:relative;z-index:1;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;font-family:var(--mono);font-size:12px;color:var(--smoke);transition:all .4s var(--ease)}
+.step.on .dot{background:var(--ink);border-color:var(--ink);color:#fff}
+.step h3{font-size:26px;font-weight:400;letter-spacing:-.015em;margin-top:4px}
+.step p{margin-top:10px;font-size:16.5px;line-height:1.6;color:var(--graphite);max-width:520px}
+.step .meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px}
+
+/* BENTO */
+.why{padding-bottom:clamp(100px,12vw,160px)}
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.b{border-radius:var(--r-lg);padding:32px;background:var(--mist);display:flex;flex-direction:column;justify-content:space-between;gap:32px;min-height:300px;overflow:hidden;position:relative}
+.b h3{font-size:26px;font-weight:400;letter-spacing:-.015em}
+.b p{font-size:15.5px;line-height:1.6;color:var(--graphite);max-width:440px;margin-top:10px}
+.b1{grid-column:span 4;background:var(--ink);color:#fff}
+.b1 p{color:#A9A9A9}
+.b2{grid-column:span 2}
+.b3{grid-column:span 2}
+.b4{grid-column:span 4}
+.files{display:flex;gap:10px;flex-wrap:wrap}
+.file{width:88px;height:108px;border-radius:10px;background:#fff;border:1px solid var(--line);position:relative;display:flex;align-items:flex-end;padding:10px;font-family:var(--mono);font-size:11px;font-weight:500;transition:transform .4s var(--ease)}
+.file::before{content:"";position:absolute;top:0;inset-inline-end:0;width:22px;height:22px;background:linear-gradient(225deg,var(--mist) 50%,#E2E2E0 50%);border-end-start-radius:6px}
+.file .bars-i{position:absolute;inset:16px 10px auto;height:36px;background:repeating-linear-gradient(to bottom,#E3E3E0 0 2px,transparent 2px 8px)}
+.b4:hover .file:nth-child(1){transform:translateY(-6px) rotate(-3deg)}
+.b4:hover .file:nth-child(2){transform:translateY(-10px)}
+.b4:hover .file:nth-child(3){transform:translateY(-6px) rotate(3deg)}
+.b4:hover .file:nth-child(4){transform:translateY(-8px) rotate(-2deg)}
+.file.x{color:#1E7A4C}.file.pdf{color:#B42318}.file.skn{color:var(--iris)}.file.dwg{color:#2F5E8C}
+.lock{width:88px;height:88px;border-radius:22px;border:1px solid var(--line);background:#fff;display:grid;place-items:center}
+.lock svg{width:36px;height:36px}
+.human{display:flex;align-items:center;gap:12px}
+.human .tg{display:flex;flex-direction:column;gap:8px;flex:1}
+.human .tg div{display:flex;justify-content:space-between;align-items:center;background:#1A1A1A;border:1px solid #2A2A2A;border-radius:10px;padding:10px 12px;font-size:13.5px}
+.human .tg div span:last-child{display:flex;gap:6px}
+.human .tg button{height:26px;padding:0 10px;border-radius:6px;border:1px solid #3A3A3A;background:transparent;color:#ddd;font-size:12px;cursor:pointer}
+.human .tg button.y{background:#fff;color:var(--ink);border-color:#fff}
+.stages{display:flex;flex-direction:column;gap:8px}.stages div{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:12px}.stages .mono{color:var(--smoke)}.stages i{height:10px;border-radius:99px;background:var(--ink)}.stages div:nth-child(2) i{background:#575757}.stages div:nth-child(3) i{background:#BDBDBD}
+.bigfig{font-size:clamp(56px,7vw,96px);font-weight:200;letter-spacing:-.04em;line-height:.9}
+
+/* ABOUT */
+.about{padding-bottom:clamp(100px,12vw,160px)}
+.about-in{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:64px;border-top:1px solid var(--line);padding-top:56px}
+.quote{font-size:clamp(26px,3vw,40px);line-height:1.25;letter-spacing:-.02em;font-weight:300}
+.quote span{color:var(--smoke)}
+.team{display:flex;flex-direction:column;gap:12px}
+.person{display:flex;align-items:center;gap:16px;padding:16px;border:1px solid var(--line);border-radius:var(--r)}
+.av{width:56px;height:56px;border-radius:14px;background:var(--forest);color:#fff;display:grid;place-items:center;font-weight:400;font-size:20px}
+.av.av2{background:var(--sand);color:var(--ink)}
+.person b{display:block;font-weight:500;font-size:16px}
+.person span{font-size:14px;color:var(--graphite)}
+.tech{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--graphite);padding:4px 4px 0}
+
+/* FAQ */
+.faq{padding-bottom:clamp(100px,12vw,160px)}
+.faq-in{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:64px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;font-size:19px;letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary .pm{flex:none;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);display:grid;place-items:center;transition:transform .35s var(--ease),background .3s}
+summary .pm svg{width:14px;height:14px}
+details[open] summary .pm{transform:rotate(45deg);background:var(--ink);border-color:var(--ink);color:#fff}
+details .ans{padding:0 0 28px;font-size:16px;line-height:1.7;color:var(--graphite);max-width:720px}
+
+/* CONTACT */
+.contact{background:var(--ink);color:#fff;padding-top:clamp(100px,12vw,160px);overflow:hidden;position:relative;isolation:isolate}
+.contact .hero-grid{-webkit-mask-image:radial-gradient(ellipse 60% 60% at 50% 20%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 60% at 50% 20%,#000 20%,transparent 75%)}
+.contact-in{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:64px;align-items:start}
+.contact .lead{color:#A0A0A0;margin-top:24px;max-width:520px}
+.contact-list{margin-top:40px;display:flex;flex-direction:column;border-top:1px solid #262626}
+.contact-list a{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid #262626;font-size:18px;transition:padding .3s var(--ease)}
+.contact-list a:hover{padding-inline-start:8px}
+.contact-list .mono{color:#7A7A7A}
+form.f{background:#121212;border:1px solid #262626;border-radius:var(--r-lg);padding:32px;display:flex;flex-direction:column;gap:16px}
+.f label{display:flex;flex-direction:column;gap:8px;font-size:13.5px;color:#A0A0A0}
+.f input,.f select{height:50px;border-radius:10px;border:1px solid #2E2E2E;background:#0A0A0A;color:#fff;padding:0 14px;font-size:16px;outline:none;transition:border-color .2s}
+.f input:focus,.f select:focus{border-color:#8A8A8A}
+.f .row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.f .btn{height:52px;margin-top:8px}
+.f small{font-size:12.5px;color:#6E6E6E;text-align:center}
+.f-ok{display:none;text-align:center;padding:40px 0;font-size:20px}
+footer.ft{margin-top:clamp(100px,12vw,160px);border-top:1px solid #1F1F1F}
+.ft-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;padding-block:48px}
+.ft-cols{display:flex;gap:64px;flex-wrap:wrap}
+.ft-cols div{display:flex;flex-direction:column;gap:12px;font-size:14px}
+.ft-cols .mono{color:#6E6E6E;margin-bottom:4px}
+.ft-cols a{color:#CFCFCF}.ft-cols a:hover{color:#fff}
+.giant{font-size:clamp(90px,21vw,320px);font-weight:200;letter-spacing:-.06em;line-height:.8;color:#161616;direction:ltr;text-align:center;user-select:none;padding-bottom:12px;white-space:nowrap}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#6E6E6E;padding-bottom:28px}
+
+
+/* human pass */
+.sec-head{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:18px}
+.sec-head .lead{max-width:680px}
+.sub-h{font-size:22px;font-weight:500;letter-spacing:-.01em;margin:56px 0 16px}
+.svc-c .num{width:36px;height:36px;border-radius:10px;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;font-size:15px;color:#fff}
+.strip-in{justify-content:center;padding-block:22px}
+.strip .label{font-size:15px;color:var(--graphite);text-align:center}
+.statement .w{color:var(--ink)!important}
+.statement p{font-size:clamp(26px,3.4vw,44px);line-height:1.3;max-width:980px}
+.steps{max-width:820px;margin-top:8px}
+.proc-cta{margin-top:56px;max-width:820px;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.proc-cta p{font-size:18px}
+.about-in{display:flex!important;flex-direction:column;gap:32px}
+.about-in .quote{max-width:980px}
+.team{flex-direction:row!important;flex-wrap:wrap}
+.team .person{flex:1 1 240px}
+.av.av3{background:var(--mist);color:var(--ink)}
+.faq-in{display:flex!important;flex-direction:column;gap:32px}
+.faq-in > div{max-width:900px}
+.contact-in{display:flex!important;flex-direction:column;gap:48px}
+.contact-in > div:first-child{max-width:760px}
+.contact form.f{max-width:760px;width:100%}
+.panel ul.pts li{justify-content:flex-start}
+
+
+.founders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.founder{border:1px solid var(--line);border-radius:var(--r-lg);padding:32px;display:flex;flex-direction:column;gap:28px;background:#fff}
+.f-top{display:flex;align-items:center;gap:18px}
+.f-av{flex:none;width:72px;height:72px;border-radius:20px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:30px;font-weight:300}
+.f-av2{background:var(--forest)}
+.f-photo{object-fit:cover;background:#2b3a5c}
+.founder h3{font-size:28px;font-weight:400;letter-spacing:-.015em}
+.f-role{display:block;margin-top:4px;font-size:16px;color:var(--graphite)}
+.f-facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.f-facts li{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-size:17px}
+.f-facts svg{flex:none;width:20px;height:20px;color:var(--graphite)}
+.story{max-width:860px;display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.story h3{font-size:22px;font-weight:500;letter-spacing:-.01em}
+.story p{font-size:18px;line-height:1.7;color:var(--graphite)}
+@media (max-width:860px){.founders{grid-template-columns:1fr}}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}
+
+/* RESPONSIVE */
+@media (max-width:1080px){
+  .grid3{grid-template-columns:1fr 1fr}.grid3 .card:last-child{grid-column:span 2}
+  .proc,.about-in,.faq-in,.contact-in{grid-template-columns:1fr;gap:40px}
+  .proc-l{position:static}
+  .svc-grid{grid-template-columns:1fr}.svc-c{min-height:0}
+  .areas{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bento .b1,.bento .b4{grid-column:span 6}.bento .b2,.bento .b3{grid-column:span 3}
+}
+@media (max-width:860px){
+  .nav-links{display:none}
+  .app-body{grid-template-columns:1fr}.side{display:flex;flex-direction:row;overflow-x:auto;gap:6px;padding:10px;border-inline-end:0;border-bottom:1px solid var(--line)}.side .mono,.side a{display:none}.side button{flex:none;white-space:nowrap}.side button .n{display:none}.demo-badge{inset-inline-start:16px}
+  .tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .panel.on{grid-template-columns:1fr}
+  .ba-row{grid-template-columns:1fr;gap:16px}
+}
+@media (max-width:620px){
+  .wrap{padding-inline:16px}
+  .nav .btn-ghost{display:none}
+  .br-d{display:none}
+  .nav-l{gap:16px}
+  .ba-row.in .fill{width:calc(var(--w) * .5)}
+  .bar-l{grid-template-columns:72px minmax(0,1fr)}
+  .tl{font-size:13px}
+  .grid3{grid-template-columns:1fr}.grid3 .card:last-child{grid-column:auto}
+  .hero-ctas{flex-direction:column;width:100%}.hero-ctas .btn{width:100%}
+  .panel .txt,.panel .vis{padding:28px 20px}
+  .bento .b2,.bento .b3{grid-column:span 6}
+  .areas{grid-template-columns:1fr}
+  .tab small{display:none}
+  .f .row2{grid-template-columns:1fr}
+  .match3{grid-template-columns:1fr}
+  .strip-in{flex-direction:column;align-items:flex-start;gap:16px}
+  .marquee{width:100%}
+  .boq td.c{display:none}.boq th:first-child{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}.app{transform:none}
+  .fill{width:var(--w)!important}.tl{opacity:1!important}.meter i{width:var(--w)!important}.progress .bar i{width:94.7%!important}
+}
+
+/* ===== palette: charcoal #1A1A1A + cream #F1EEE9, spice #2F6BFF (used sparingly) ===== */
+:root{--ink:#1A1A1A;--mist:#F1EEE9;--spice:#2F6BFF;--forest:#2A2A2A;--iris:#2F6BFF}
+body{background:#FBFAF7}
+.hero h1 em{font-style:normal;color:var(--spice)}
+.hero-glow{background:radial-gradient(closest-side,rgba(47,107,255,.16),transparent)}
+.meter i,.fill.ai{background:var(--spice)}
+.fill.ai+.tl{color:#7DA2FF}
+.eyebrow::before{background:var(--spice)}
+
+/* ===== services roadmap (fills on scroll) ===== */
+.road{position:relative;max-width:820px;margin:8px 0 clamp(80px,9vw,120px);padding-inline-start:72px}
+.road-rail{position:absolute;inset-inline-start:21px;top:14px;bottom:14px;width:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.road-fill{position:absolute;inset-inline:0;top:0;height:var(--p,0%);background:var(--spice);border-radius:2px;transition:height .12s linear}
+.road-step{position:relative;padding:6px 0 clamp(56px,7vw,88px)}
+.road-step:last-child{padding-bottom:0}
+.road-dot{position:absolute;inset-inline-start:-58px;top:10px;width:16px;height:16px;border-radius:50%;background:var(--white);border:2px solid #CFCAC2;transition:border-color .4s var(--ease),background .4s var(--ease),box-shadow .4s var(--ease)}
+.road-body{opacity:.32;transform:translateY(10px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.road-k{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--smoke)}
+.road-step h3{font-size:clamp(28px,3.4vw,44px);line-height:1.1;margin:6px 0 12px;font-weight:300}
+.road-step p{font-size:17px;line-height:1.65;color:var(--graphite);max-width:560px}
+.road-step.on .road-body{opacity:1;transform:none}
+.road-step.on .road-dot{border-color:var(--spice);background:var(--spice);box-shadow:0 0 0 6px rgba(47,107,255,.14)}
+.road-step.on .road-k{color:var(--spice)}
+@media (max-width:860px){.road{padding-inline-start:44px}.road-rail{inset-inline-start:7px}.road-dot{inset-inline-start:-44px}}
+@media (prefers-reduced-motion:reduce){.road-body{opacity:1;transform:none}.road-fill{transition:none}}
+
+/* ===== 3D hero ===== */
+.h3d{position:relative;height:100vh;min-height:680px;overflow:hidden;background:#151515;color:#fff}
+.h3d .word{position:absolute;top:84px;inset-inline:2vw;z-index:0;pointer-events:none;direction:ltr;text-align:center}
+.h3d .word span{font-family:"Inter Tight",var(--sans);font-weight:600;font-size:min(18vw,300px);letter-spacing:-.045em;line-height:.86;color:var(--spice);user-select:none;white-space:nowrap}
+.h3d .word sup{font-size:.5em;vertical-align:top;position:relative;top:.06em;margin-left:.04em}
+.h3d .ghost{position:absolute;inset:0;z-index:0;pointer-events:none}
+.h3d .labels{position:absolute;inset-inline:2vw;display:flex;justify-content:space-between;font-size:12px;color:#8a8a8a;letter-spacing:.02em}
+.h3d .labels.top{z-index:0;top:calc(84px + min(15.6vw,260px));border-top:1px solid #262626;padding-top:10px}
+.h3d .labels.bot{bottom:18px;z-index:2}
+#stage3d{position:absolute;inset:0;z-index:1}
+.h3d .copy{position:absolute;bottom:58px;inset-inline-start:max(24px,3vw);z-index:2;max-width:560px}
+.h3d h1{margin:0 0 12px;font-weight:300;font-size:clamp(32px,3.4vw,52px);line-height:1.06;letter-spacing:-.025em}
+.h3d h1 em{font-style:normal;color:var(--spice)}
+.h3d .copy p{margin:0 0 20px;color:#A9A9A9;font-size:17px;line-height:1.55;max-width:470px}
+.h3d .copy .hero-ctas{justify-content:flex-start}
+.h3d .copy .hero-note{justify-content:flex-start;margin-top:16px}
+.hero-demo{padding-top:clamp(60px,7vw,100px)!important}
+@media(max-width:860px){.h3d{min-height:760px}.h3d .copy{inset-inline:20px;bottom:54px}.h3d .labels.top span:nth-child(n+3){display:none}.h3d .labels.bot{display:none}.h3d .copy .hero-note{display:none}.h3d .copy{padding-top:60px;background:linear-gradient(to top,#151515 72%,rgba(21,21,21,0))}.h3d .ghost{display:none}}
+
+.h3d-eyebrow{display:inline-block;font-size:13px;color:#BDBDBD;border:1px solid #333;border-radius:99px;padding:5px 12px;margin-bottom:14px}
+.h3d .domains{position:absolute;bottom:0;inset-inline:0;z-index:2;list-style:none;margin:0;padding:14px 2vw;display:flex;justify-content:space-between;gap:10px;border-top:1px solid #262626;background:rgba(21,21,21,.6)}
+.h3d .domains li{font-size:13px;color:#CFCFCF;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.h3d .domains li::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--spice)}
+.h3d .copy{bottom:84px}
+@media(max-width:860px){.h3d .domains{position:static;flex-wrap:wrap;justify-content:flex-start;gap:8px 14px;padding:16px 20px 22px;background:#151515}.h3d .domains li{font-size:12.5px}.h3d{height:auto;min-height:0;padding-top:min(118vw,540px)}.h3d .copy{position:relative;inset:auto;bottom:auto;padding:0 20px 8px;background:none}}
+/* demo tabs */
+.demo-head{text-align:center;max-width:720px;margin:0 auto 28px;color:#fff}
+.demo-head h2{margin:0 0 10px}
+.demo-head p{color:#A9A9A9}
+.side button{all:unset;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:10px;height:36px;padding:0 10px;border-radius:8px;font-size:14px;color:var(--graphite);cursor:pointer}
+.side button span:first-child{display:flex;align-items:center;gap:10px}
+.side button svg{width:16px;height:16px}
+.side button:hover{background:#F0EFEC}
+.side button.on{background:var(--ink);color:#fff}
+.side button .n{font-family:var(--mono);font-size:11px;opacity:.7}
+.side button:focus-visible{outline:2px solid var(--spice);outline-offset:2px}
+.view[hidden]{display:none}
+.boq td.p.bad,.boq td.bad{color:var(--bad)}
+.boq td.ok{color:var(--ok)}
+.sum-row{display:flex;justify-content:space-between;font-size:13px;color:var(--graphite);padding-top:8px;border-top:1px solid var(--line)}
+.sum-row b{color:var(--ink);font-weight:500;direction:ltr}
+.wa{background:#F4F1EA;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px;font-size:13px}
+.wa .msg{align-self:flex-start;background:#fff;border-radius:10px;padding:8px 10px;max-width:92%;box-shadow:0 1px 0 rgba(0,0,0,.05)}
+.wa .msg small{display:block;color:var(--smoke);font-size:11px;margin-top:4px}
+.wa .ph{width:150px;height:96px;border-radius:8px;background:repeating-linear-gradient(0deg,#e9e6df 0 9px,#dcd8cf 9px 10px);position:relative}
+.wa .ph::after{content:"תעודת משלוח";position:absolute;top:8px;inset-inline-start:8px;font-size:11px;color:#6b6b6b;background:#fff;padding:1px 6px;border-radius:4px}
+.areas{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media(max-width:1000px){.areas{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:620px){.areas{grid-template-columns:1fr!important}}
+.boq td.v{font-size:12.5px;text-align:end;padding-inline-start:8px;white-space:nowrap;color:var(--ink)}.boq td.v.bad{color:var(--bad)}
+.boq.inv th:not(:first-child),.boq.inv td:not(:first-child){text-align:center!important;padding-inline:6px}.boq.inv td.p{direction:ltr}
+@media(max-width:860px){.side button{white-space:nowrap!important;flex:none!important}.view .card{overflow-x:auto}.boq.inv{min-width:560px}.boq.inv td.d{min-width:120px}}
+.grid3.g2f{grid-template-columns:1fr 1.5fr}@media(max-width:860px){.grid3.g2f{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <div class="nav-l">
+      <a href="#top" class="logo" aria-label="Meetek, לעמוד הבית">
+        <svg class="logo-mark" viewBox="0 0 30 22" aria-hidden="true"><circle cx="10" cy="11" r="8.6" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="20" cy="11" r="8.6" fill="none" stroke="#2F6BFF" stroke-width="2.6"/></svg>
+        Meetek
+      </a>
+      <nav class="nav-links" aria-label="ניווט ראשי">
+        <a href="#services">מה אנחנו עושים</a>
+        <a href="#demo">דוגמה</a>
+        <a href="#process">איך עובדים</a>
+        <a href="#about">הצוות</a>
+        <a href="#faq">שאלות</a>
+      </nav>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="tel:0584001054" dir="ltr">058-4001054</a>
+      <a class="btn btn-dark" href="#contact">קבעו שיחה</a>
     </div>
   </div>
 </header>
 
-<main id="main">
+<main id="top">
 
-<section class="hero">
-  <span class="float-ic a"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a3 3 0 0 0-3-1z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg></span>
-  <span class="float-ic b"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1 1-1.5 4-1.5 4s3-.5 4-1.5"/><path d="M9 15l-3-3c1-4 5-9 12-9 0 7-5 11-9 12z"/><circle cx="14.5" cy="9.5" r="1.5"/></svg></span>
-  <span class="float-ic c"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
-  <div class="wrap center">
-    <div class="reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>לחברות הנדסה, ביצוע ותשתיות</span>
-      <h1>סטודנט מצטיין מהטכניון,<br><span class="grad-text">שיבנה לכם תוכנות ואוטומציות עם AI</span></h1>
-      <p class="lead">הסטודנט עובד אצלכם במשרד, בדרך כלל 3 ימים בשבוע. הוא לומד איך העבודה נעשית היום, מוצא איפה הולכות השעות, ובונה את הכלים שמחזירים לכם אותן. אנחנו מוצאים, מסננים ומתאימים אותו בשבילכם.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="#contact">לפגישת היכרות של חצי שעה<span class="arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="btn btn-ghost" href="#how">איך זה עובד</a>
+<section class="h3d" aria-label="Meetek">
+  <div class="word" aria-hidden="true"><span>MEETEK<sup>®</sup></span></div>
+  <svg class="ghost" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#1f1f1f" stroke-width="40"><circle cx="230" cy="640" r="190"/><circle cx="1210" cy="640" r="190"/></g>
+    <g fill="none" stroke="#1f1f1f" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"><path d="M1130 640h150M1225 575l65 65-65 65"/></g>
+  </svg>
+  
+  <div id="stage3d" aria-hidden="true"></div>
+  <div class="copy">
+    <span class="h3d-eyebrow">סוכנות AI לחברות בנייה, הנדסה ותשתיות</span>
+    <h1>AI שעובד בשביל<br><em style="white-space:nowrap">החברה שלכם.</em></h1>
+    <p>אנחנו ממפים איפה הולך הזמן במשרד, ובונים לכם תוכנות ואוטומציות שעושות את העבודה הידנית. מהמכרז הראשון ועד החשבון הסופי.</p>
+    <div class="hero-ctas">
+        <a class="btn btn-light btn-lg" href="#contact">קבעו שיחת אבחון חינם <span class="arr" aria-hidden="true">←</span></a>
+        <a class="btn btn-ghost-dark btn-lg" href="https://wa.me/972584001054" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>וואטסאפ</a>
+      </div>
+    <div class="hero-note">
+        <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>חתימה על סודיות לפני שרואים מסמך אחד</span>
+        <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>עובד עם הקבצים שכבר יש לכם</span>
+        <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8.5l3 3 7-7"/></svg>צוות מהטכניון</span>
+      </div>
+  </div>
+  <ul class="domains" aria-label="תחומים"><li>מכרזים ותמחור</li><li>רכש וחשבוניות</li><li>דוחות ביצוע ושטח</li><li>חשבונות לקוח</li><li>מסמכים ותוכניות</li><li>דיווח להנהלה</li></ul>
+</section>
+
+<section class="hero hero-demo" id="demo">
+  <div class="hero-grid" aria-hidden="true"></div>
+  
+  <div class="wrap">
+    <div class="demo-head">
+      <h2 class="h-lg">ככה זה נראה אצלכם</h2>
+      <p class="lead">שלוש דוגמאות מתוך הכלים שאנחנו בונים. בחרו בתפריט: מכרזים, חשבוניות ספקים או דוחות ביצוע.</p>
+    </div>
+    <div class="stage">
+      <div class="app" id="app" role="region" aria-label="הדגמה של כלים לדוגמה: מכרזים, חשבוניות ספקים ודוחות ביצוע">
+        <div class="scan" aria-hidden="true"></div>
+        <div class="app-bar">
+          <div class="crumbs"><b>Meetek</b><i>/</i><span id="crumbA">מכרזים</span><i>/</i><b id="crumbB">מכרז לדוגמה 118/26</b></div>
+          <span class="live" id="liveTag">מוכן לבדיקה</span>
+        </div>
+        <div class="app-body">
+          <aside class="side" aria-label="תפריט ההדגמה">
+            <span class="mono">הכלים שלכם</span>
+            <a aria-hidden="true"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg>סקירה</span></a>
+            <button type="button" data-view="tenders" class="on" aria-pressed="true"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M9.5 2H4a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V5.5z"/><path d="M9.5 2v3.5H13M5.5 9h5M5.5 11.5h3"/></svg>מכרזים</span><span class="n">3</span></button>
+            <a aria-hidden="true"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="2" width="11" height="12" rx="1"/><path d="M5 5h6M5 8h6M5 11h3"/></svg>כתבי כמויות</span><span class="n">2</span></a>
+            <button type="button" data-view="invoices" aria-pressed="false"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 2h8v12l-2-1.2L8 14l-2-1.2L4 14z"/><path d="M6 6h4M6 8.5h4"/></svg>רכש וחשבוניות</span><span class="n">14</span></button>
+            <button type="button" data-view="field" aria-pressed="false"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M1.5 4.5h8v6h-8zM9.5 6.5h2.5l2 2v2h-4.5"/><circle cx="4.5" cy="11.5" r="1.3"/><circle cx="11.5" cy="11.5" r="1.3"/></svg>דוחות ביצוע</span><span class="n">31</span></button>
+          </aside>
+          <div class="main view" data-view="tenders">
+            <div class="doc-head">
+              <div>
+                <div class="mono">מכרז 118/26 · 214 עמודים</div>
+                <h3>עבודות תשתית ופיתוח, שלב ב׳</h3>
+              </div>
+              <div class="chips">
+                <span class="chip">הגשה <b>14.12</b></span>
+                <span class="chip">סיור קבלנים <b>02.12</b></span>
+                <span class="chip">ערבות <b>5%</b></span>
+                <span class="chip">אומדן <b>₪12.4M</b></span>
+              </div>
+            </div>
+            <div class="grid3">
+              <div class="card">
+                <div class="card-h"><h4>תנאי סף</h4><span class="mono">4 / 5</span></div>
+                <ul class="checks">
+                  <li><span class="ic ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6.5l2.2 2.2 4.8-5"/></svg></span>סיווג קבלני ג׳-5 בענף 200</li>
+                  <li><span class="ic ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6.5l2.2 2.2 4.8-5"/></svg></span>מחזור שנתי ממוצע מעל ₪20M</li>
+                  <li><span class="ic ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6.5l2.2 2.2 4.8-5"/></svg></span>3 פרויקטים דומים ב-5 שנים</li>
+                  <li><span class="ic ok"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 6.5l2.2 2.2 4.8-5"/></svg></span>מהנדס ביצוע במשרה מלאה</li>
+                  <li><span class="ic warn"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v3.5M6 8.6v.1"/></svg></span><span>תקן ISO 9001<small>לבדוק תוקף לפני ההגשה</small></span></li>
+                </ul>
+              </div>
+              <div class="card verdict">
+                <div class="card-h"><h4>האם לגשת</h4></div>
+                <div>
+                  <div class="big">לגשת.</div>
+                  <p style="margin-top:10px">עומדים בכל תנאי הסף. נקודה אחת לבדיקה לפני ההגשה.</p>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <div class="row"><span>התאמה לפרופיל החברה</span><span dir="ltr">92%</span></div>
+                  <div class="meter"><i style="--w:92%"></i></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-h"><h4>כתב כמויות</h4></div>
+                <table class="boq">
+                  <thead><tr><th>סעיף</th><th>תיאור</th><th style="text-align:end">מחיר</th><th style="text-align:end">ביטחון</th></tr></thead>
+                  <tbody>
+                    <tr><td class="c">51.01.0010</td><td class="d">חפירה ומילוי מהודק</td><td class="p">₪38</td><td style="text-align:end"><span class="conf"><i style="--c:98%"></i></span></td></tr>
+                    <tr><td class="c">57.02.0120</td><td class="d">צינור PVC קוטר 160 מ״מ</td><td class="p">₪142</td><td style="text-align:end"><span class="conf"><i style="--c:95%"></i></span></td></tr>
+                    <tr class="flag"><td class="c">08.04.0030</td><td class="d">תא בקרה, מידה חריגה</td><td class="p">—</td><td style="text-align:end"><span class="tag-warn">לבדיקה</span></td></tr>
+                    <tr><td class="c">40.03.0210</td><td class="d">אבן שפה טרומית</td><td class="p">₪96</td><td style="text-align:end"><span class="conf"><i style="--c:91%"></i></span></td></tr>
+                  </tbody>
+                </table>
+                <div class="progress"><span dir="ltr">412 / 435</span><div class="bar"><i></i></div><span>תומחרו</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="main view" data-view="invoices" hidden>
+            <div class="doc-head">
+              <div>
+                <div class="mono">חשבונית 20417 · ספק בטון</div>
+                <h3>בדיקת חשבונית מול הזמנה ותעודות משלוח</h3>
+              </div>
+              <div class="chips">
+                <span class="chip">פרויקט <b>שכונה ד׳, מבנה 3</b></span>
+                <span class="chip">הזמנת רכש <b>PO-0912</b></span>
+                <span class="chip">תעודות <b>6</b></span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-h"><h4>שורות החשבונית</h4><span class="mono">2 חריגות</span></div>
+              <table class="boq inv">
+                <thead><tr><th>פריט</th><th style="text-align:end">בחשבונית</th><th style="text-align:end">בתעודות</th><th style="text-align:end">מחיר: חשבונית / הזמנה</th><th style="text-align:end">סטטוס</th></tr></thead>
+                <tbody>
+                  <tr><td class="d">בטון ב-30, יציקת תקרה</td><td class="v">48 מ״ק</td><td class="v bad">46 מ״ק</td><td class="p">₪395 / ₪395</td><td style="text-align:end"><span class="tag-warn">כמות</span></td></tr>
+                  <tr><td class="d">משאבת בטון, 4 שעות</td><td class="p">1</td><td class="p">1</td><td class="p">₪1,450 / ₪1,450</td><td class="ok" style="text-align:end">תקין</td></tr>
+                  <tr class="flag"><td class="d">תוספת יציקה בשבת</td><td class="p">1</td><td class="p">1</td><td class="v bad">₪900 / לא בהזמנה</td><td style="text-align:end"><span class="tag-warn">לבדיקה</span></td></tr>
+                  <tr><td class="d">בטון ב-20, מצע</td><td class="v">12 מ״ק</td><td class="v">12 מ״ק</td><td class="p">₪360 / ₪360</td><td class="ok" style="text-align:end">תקין</td></tr>
+                </tbody>
+              </table>
+              <div class="sum-row"><span>הפרש לבדיקה לפני אישור לתשלום</span><b>₪1,690</b></div>
+            </div>
+          </div>
+          <div class="main view" data-view="field" hidden>
+            <div class="doc-head">
+              <div>
+                <div class="mono">יומן עבודה · 12.11</div>
+                <h3>דוח יומי מהשטח, ישר מהוואטסאפ</h3>
+              </div>
+              <div class="chips">
+                <span class="chip">פרויקט <b>כביש גישה, קטע 2</b></span>
+                <span class="chip">מנהל עבודה <b>יוסי</b></span>
+              </div>
+            </div>
+            <div class="grid3 g2f">
+              <div class="card">
+                <div class="card-h"><h4>מה נשלח</h4></div>
+                <div class="wa">
+                  <div class="msg"><div class="ph" aria-hidden="true"></div><small>07:12</small></div>
+                  <div class="msg">היום 6 פועלים ומפעיל מחפר. חפירה לתעלת ניקוז, בערך 60 מטר. מחר מגיע ברזל.<small>16:40</small></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-h"><h4>מה נכנס לטבלה</h4><span class="mono">ממתין לאישור</span></div>
+                <table class="boq">
+                  <tbody>
+                    <tr><td class="d">כוח אדם</td><td class="v">6 פועלים + מפעיל</td></tr>
+                    <tr><td class="d">ציוד</td><td class="v">מחפר, יום עבודה</td></tr>
+                    <tr><td class="d">ביצוע</td><td class="v">חפירה לתעלת ניקוז, כ-60 מ׳</td></tr>
+                    <tr><td class="d">חומרים שהגיעו</td><td class="v">מצע סוג א׳, 2 משאיות (מהתעודה)</td></tr>
+                    <tr class="flag"><td class="d">לתשומת לב</td><td class="v">ברזל מגיע מחר: לוודא שיש מי שיקבל</td></tr>
+                  </tbody>
+                </table>
+                <div class="sum-row"><span>נשמר ביומן הפרויקט אחרי אישור של מנהל העבודה</span><b></b></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="stats"><div class="stat reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><b>30</b><span>דקות של פגישת היכרות, ללא עלות</span></div><div class="stat reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div><b>3</b><span>ימים בשבוע אצלכם במשרד</span></div><div class="stat reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><b>15%</b><span>הסטודנטים המצטיינים ביותר בטכניון</span></div></div>
   </div>
 </section>
 
-<section class="block">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg>הבעיה</span>
-      <h2>AI הוא בדרך כלל <span class="grad-text">רק דיבורים</span></h2>
-      <p class="lead">כולם מדברים על בינה מלאכותית. מעט חברות באמת משתמשות בה בעבודה היומיומית.</p>
+<section class="strip" aria-label="למי זה מתאים">
+  <div class="wrap strip-in">
+    <span class="label">עובדים עם קבלנים, חברות בנייה, משרדי הנדסה וחברות תשתיות.</span>
+  </div>
+</section>
+
+<section class="statement wrap" aria-label="הבעיה">
+  <p id="stmt">בהרבה חברות בנייה ותשתיות חלק גדול מהעבודה במשרד עדיין נעשה ידנית: קוראים חוברות מכרז, מחפשים מחירים במכרזים קודמים, בודקים חשבוניות מול תעודות משלוח ומעתיקים נתונים מקובץ לקובץ. זה לוקח זמן, וכשיש לחץ, זה גם המקום שבו נופלות טעויות שעולות כסף.</p>
+</section>
+
+<section class="svc wrap" id="services">
+  <div class="sec-head">
+    <h2 class="h-lg rv">מה אנחנו עושים</h2>
+    <p class="lead rv d1">אנחנו לא מוכרים תוכנה אחת. אנחנו לומדים איך החברה עובדת, ובונים כלים לתהליכים שעולים לה הכי הרבה זמן וכסף.</p>
+  </div>
+  <div class="road" id="road">
+    <div class="road-rail"><i class="road-fill"></i></div>
+    <div class="road-step">
+      <span class="road-dot"></span>
+      <div class="road-body"><span class="road-k">שלב 1</span><h3>ממפים את העבודה</h3><p>נפגשים עם ההנהלה ועם האנשים שעושים את העבודה, ומבינים איפה הולך הזמן. בסוף יש רשימה של מה כדאי לשפר ובאיזה סדר.</p></div>
     </div>
-    <div class="pains"><article class="pain r reveal"><div class="pi"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></span><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span></div><h3>ניסיתם ChatGPT, וזה נשאר בטאב בדפדפן</h3><p>העבודה עצמה נשארה אותו דבר: אקסל, מסמכים והעתק-הדבק.</p></article><article class="pain o reveal"><div class="pi"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></span><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 4.5a3 3 0 0 1 0 6M18 14a5.5 5.5 0 0 1 3 6"/></svg></span></div><h3>אף אחד בחברה לא יודע מאיפה להתחיל</h3><p>לכולם יש עבודה שוטפת, ואין למי לתת את הפרויקט הזה.</p></article><article class="pain p reveal"><div class="pi"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></span><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span></div><h3>יועצים נותנים מצגת, אבל לא בונים</h3><p>ההמלצות נשארות על הנייר, והתהליכים לא משתנים.</p></article></div>
-    <p class="callout reveal">אנחנו לא נותנים לכם מפת דרכים. <b>אנחנו יושבים אצלכם ובונים.</b></p>
-  </div>
-</section>
-
-<section class="block" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>השוואה</span>
-      <h2>למה לא חברת ייעוץ, <span class="grad-text">או גיוס לבד?</span></h2>
+    <div class="road-step">
+      <span class="road-dot"></span>
+      <div class="road-body"><span class="road-k">שלב 2</span><h3>בונים כלים לפי החברה שלכם</h3><p>תוכנה שנבנית על המסמכים, המחירים והשיטה שלכם. היא קוראת, משווה ומסכמת, והצוות שלכם בודק ומאשר.</p></div>
     </div>
-    <div class="table-wrap reveal"><table><thead><tr><th scope="col"><span class="sr-only">קריטריון</span></th><th scope="col">גיוס לבד</th><th scope="col">יועץ חיצוני</th><th scope="col" class="us">Meetek</th></tr></thead><tbody><tr><td>מי מוצא את המועמד</td><td>אתם, על חשבון הזמן שלכם</td><td>לא רלוונטי</td><td class="us">אנחנו, מתוך 15% העליונים בטכניון</td></tr><tr><td>נמצא אצלכם</td><td>כן</td><td>לרוב לא</td><td class="us">3 ימים בשבוע, במשרד</td></tr><tr><td>מה מקבלים</td><td>תלוי במי שגייסתם</td><td>המלצות ומצגת</td><td class="us">כלים שנבנים ומוטמעים בפועל</td></tr><tr><td>מה נשאר אצלכם</td><td>מה שהעובד יודע</td><td>היועץ בונה, גובה ועוזב</td><td class="us">מישהו שמכיר את העבודה מבפנים וממשיך לשפר</td></tr><tr><td>התחייבות</td><td>אין</td><td>על שעות, לא על תוצאה</td><td class="us">לא ראיתם תוצאה בחודש הראשון? לא משלמים לנו עליו</td></tr><tr><td>עלות</td><td>מודעות, זמן ראיונות, ניסוי וטעייה</td><td>פרויקט סגור, תשלום גבוה לשעה</td><td class="us">דמי השמה לפי שעות עבודה, רק בשנה הראשונה</td></tr></tbody></table></div>
-  </div>
-</section>
-
-<section class="block" id="work" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>על מה הסטודנט עובד</span>
-      <h2>התהליכים שאוכלים <span class="grad-text">לכם את השבוע</span></h2>
-      <p class="lead">הסטודנט מתחיל מהתהליך שהכי כואב לכם, ומשם ממשיך לתהליך הבא בתור.</p>
+    <div class="road-step">
+      <span class="road-dot"></span>
+      <div class="road-body"><span class="road-k">שלב 3</span><h3>מחברים בין המערכות</h3><p>אוטומציות בין האקסלים, המיילים והמערכות שכבר יש לכם, כדי שאותו נתון לא יוקלד פעמיים.</p></div>
     </div>
-    <div class="cards"><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg></div><h3>מכרזים</h3><p>איתור מכרזים רלוונטיים, סיכום של כל מכרז לעמוד אחד, בדיקת תנאי סף ורשימת מסמכים שנבדקת אוטומטית.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18h8"/></svg></div><h3>כתבי כמויות וחשבונות חלקיים</h3><p>הפקת חשבון חלקי מתוך כתב הכמויות והמדידות, בלי להקליד הכול מחדש בכל חודש.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>טפסים, דוחות ויומני עבודה</h3><p>טפסי רגולציה, דוחות למזמין ויומני עבודה שנוצרים מהנתונים שכבר יש לכם.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6M15 18H9a3 3 0 0 1-3-3V9"/></svg></div><h3>חיבור בין מערכות</h3><p>Priority, חשבשבת, אקסל ומייל שמדברים אחד עם השני, במקום העתק-הדבק ידני.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div><h3>התאמות וחשבוניות</h3><p>התאמת חשבוניות ספקים להזמנות ולתעודות משלוח, ואיתור חריגות לפני שמשלמים.</p></article><article class="card reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h3M8 17h6"/></svg></div><h3>כלים פנימיים</h3><p>דשבורד רווחיות לכל פרויקט, מעקב ציוד בשטח, וכל מה שהיום מפוזר בעשרה קבצי אקסל.</p></article></div>
   </div>
-</section>
 
-<section class="block" style="padding-top:0">
-  <div class="wrap showcase">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg>דוגמה מהשטח</span>
-      <h2>ככה נראית <span class="grad-text">עבודה של הסטודנט</span></h2>
-      <p class="lead">קחו לדוגמה מכרזים. במקום שמישהו יקרא 200 עמודים, כל מכרז מגיע מסוכם בעמוד אחד:</p>
-      <ul><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>מה העבודה, מי המזמין ומתי ההגשה</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>האם אתם עומדים בתנאי הסף</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אילו מסמכים כבר יש לכם ומה חסר</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אילו סעיפים כדאי לבדוק לפני שניגשים</li></ul>
+  <h3 class="sub-h rv">מה אנחנו בונים</h3>
+  <div class="areas">
+    <div class="area rv">
+      <div class="area-h"><span class="area-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 2.5H5.5a1 1 0 00-1 1v13a1 1 0 001 1h9a1 1 0 001-1V6z"/><path d="M12 2.5V6h3.5M7.5 10h5M7.5 13h3"/></svg></span><h3>מכרזים ותמחור</h3></div>
+      <ul><li>סיכום חוברת מכרז: תנאי סף, מועדים, ערבויות ומסמכים לצירוף</li><li>מחיר מוצע לכל סעיף בכתב הכמויות לפי מכרזים קודמים שלכם</li><li>סעיפים חריגים מסומנים לבדיקה של המתמחר</li></ul>
     </div>
-    <aside class="sample reveal" aria-label="סיכום מכרז בעמוד אחד">
-      <span class="sample-tag">דוגמה לתוצר</span>
-      <div class="sample-head"><strong>סיכום מכרז בעמוד אחד</strong><span>נוצר אוטומטית</span></div>
-      <dl><dt>מזמין</dt><dd>רשות מקומית</dd><dt>עבודה</dt><dd>שיקום תשתיות ופיתוח, שלב א'</dd><dt>הגשה</dt><dd>עוד 12 ימים</dd><dt>סיווג נדרש</dt><dd>ג3 ומעלה</dd></dl>
-      <ul class="checks"><li><span class="dot ok" aria-hidden="true">✓</span>עומדים בתנאי הסף: סיווג וניסיון קודם</li><li><span class="dot ok" aria-hidden="true">✓</span>9 מתוך 13 מסמכים כבר קיימים אצלכם</li><li><span class="dot warn" aria-hidden="true">!</span>חסר: אישור ניהול ספרים בתוקף וערבות הגשה</li><li><span class="dot warn" aria-hidden="true">!</span>סעיף פיצוי מוסכם חריג: כדאי לבדוק</li></ul>
-      <p class="sample-foot">המחשה בלבד. כך נראה תוצר טיפוסי של סטודנט שמטפל אצלכם במכרזים.</p>
-    </aside>
-  </div>
-</section>
-
-<section class="block" id="how" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>איך זה עובד</span>
-      <h2>מפגישה אחת <span class="grad-text">לסטודנט שעובד אצלכם</span></h2>
+    <div class="area rv d1">
+      <div class="area-h"><span class="area-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 2.5h10v15l-2.5-1.5-2.5 1.5-2.5-1.5L5 17.5z"/><path d="M7.5 7h5M7.5 10h5"/></svg></span><h3>רכש וחשבוניות</h3></div>
+      <ul><li>חשבונית ספק נבדקת מול הזמנת הרכש ותעודות המשלוח</li><li>חריגה במחיר או בכמות מסומנת לפני אישור לתשלום</li><li>השוואה בין הצעות מחיר של ספקים</li></ul>
     </div>
-    <ol class="steps"><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div><small>שלב 1</small><h3>פגישת היכרות</h3><p>מבינים איך אתם עובדים היום ואיפה הולך הזמן.</p><span class="pill">30 דקות, ללא עלות</span></li><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l4-4 5 2 5-2 4 4"/><path d="M7 7v6l5 5 5-5V7"/></svg></div><small>שלב 2</small><h3>התאמת סטודנט</h3><p>בוחרים את הסטודנט שמתאים לתחום ולאנשים שלכם.</p><span class="pill">מתוך 15% העליונים בטכניון</span></li><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><small>שלב 3</small><h3>החודש הראשון</h3><p>ממפים תהליכים ומתחילים ממה שיחסוך לכם הכי הרבה. כבר בחודש הראשון תראו תוצאה.</p><span class="pill">תוצאה בחודש הראשון</span></li><li class="step reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1 1-1.5 4-1.5 4s3-.5 4-1.5"/><path d="M9 15l-3-3c1-4 5-9 12-9 0 7-5 11-9 12z"/><circle cx="14.5" cy="9.5" r="1.5"/></svg></div><small>שלב 4</small><h3>עבודה שוטפת</h3><p>הסטודנט ממשיך לתהליך הבא בתור, וכל חודש עוד עבודה ידנית יורדת לכם מהשולחן.</p><span class="pill">3 ימים בשבוע</span></li></ol>
+    <div class="area rv d2">
+      <div class="area-h"><span class="area-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 16.5h16M4 16.5V9l6-4.5L16 9v7.5"/><path d="M8 16.5v-4h4v4"/></svg></span><h3>דוחות ביצוע ושטח</h3></div>
+      <ul><li>מנהל העבודה שולח בוואטסאפ הודעה או צילום של תעודה</li><li>כוח אדם, ציוד וביצוע נכנסים ליומן העבודה של הפרויקט</li><li>מה שחסר או מתעכב עולה לתשומת לב</li></ul>
+    </div>
+    <div class="area rv">
+      <div class="area-h"><span class="area-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="3" width="14" height="14" rx="1.5"/><path d="M6.5 7h7M6.5 10h7M6.5 13h4"/></svg></span><h3>חשבונות לקוח</h3></div>
+      <ul><li>חשבון חלקי מוכן מהכמויות שבוצעו מול כתב הכמויות</li><li>מצטבר, חריגות ועבודות נוספות במקום אחד</li><li>פחות הקלדה כפולה בין השטח למשרד</li></ul>
+    </div>
+    <div class="area rv d1">
+      <div class="area-h"><span class="area-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2.5 5.5a1 1 0 011-1h4l1.5 1.5h7.5a1 1 0 011 1v8.5a1 1 0 01-1 1h-13a1 1 0 01-1-1z"/><circle cx="10" cy="11" r="2.2"/><path d="M11.6 12.6l1.6 1.6"/></svg></span><h3>מסמכים ותוכניות</h3></div>
+      <ul><li>חיפוש בחוזים, במפרטים ובפרוטוקולים של החברה</li><li>שואלים בעברית ומקבלים תשובה עם הפניה למסמך</li><li>סיכום פרוטוקול ישיבה ומשימות שיצאו ממנו</li></ul>
+    </div>
+    <div class="area rv d2">
+      <div class="area-h"><span class="area-ic"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 17V3M3 17h14"/><path d="M6.5 13l3-4 3 2.5 4-6"/></svg></span><h3>דיווח להנהלה</h3></div>
+      <ul><li>דוח שבועי לכל פרויקט מהנתונים שכבר קיימים</li><li>תקציב מול ביצוע, ומה מתעכב</li><li>בלי לבנות את הדוח מחדש בכל שבוע</li></ul>
+    </div>
   </div>
 </section>
 
-<section class="block" style="padding-top:0">
+
+
+<section class="ba" id="impact">
   <div class="wrap">
-    <div class="story reveal">
-      <div class="head">
-        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>למה הקמנו את Meetek</span>
-        <h2>התחלנו <span class="grad-text">מבעיה אמיתית</span></h2>
+    <div class="sec-head" style="margin-bottom:0">
+      <h2 class="h-lg rv">מה משתנה ביום-יום</h2>
+      <p class="lead rv d1">האנשים שלכם ממשיכים לבדוק ולהחליט. מה שמתקצר זה הקריאה, ההקלדה והחיפוש.</p>
+    </div>
+    <div class="ba-table">
+      <div class="ba-row">
+        <h4>להבין אם לגשת למכרז<small>תנאי סף, מועדים, ערבויות</small></h4>
+        <div class="bars">
+          <div class="bar-l"><span>היום</span><div class="track"><div class="fill man" style="--w:78%"></div><span class="tl">ימים של קריאה</span></div></div>
+          <div class="bar-l"><span>עם Meetek</span><div class="track"><div class="fill ai" style="--w:6%"></div><span class="tl">דקות</span></div></div>
+        </div>
       </div>
+      <div class="ba-row">
+        <h4>לתמחר כתב כמויות<small>מאות סעיפים, מחיר לכל אחד</small></h4>
+        <div class="bars">
+          <div class="bar-l"><span>היום</span><div class="track"><div class="fill man" style="--w:70%"></div><span class="tl">ימים של הקלדה</span></div></div>
+          <div class="bar-l"><span>עם Meetek</span><div class="track"><div class="fill ai" style="--w:14%"></div><span class="tl">רק הסעיפים החריגים</span></div></div>
+        </div>
+      </div>
+      <div class="ba-row">
+        <h4>לבדוק חשבוניות ספקים<small>מול הזמנות ותעודות משלוח</small></h4>
+        <div class="bars">
+          <div class="bar-l"><span>היום</span><div class="track"><div class="fill man" style="--w:56%"></div><span class="tl">שורה אחרי שורה</span></div></div>
+          <div class="bar-l"><span>עם Meetek</span><div class="track"><div class="fill ai" style="--w:8%"></div><span class="tl">רק הפערים</span></div></div>
+        </div>
+      </div>
+      <div class="ba-row">
+        <h4>הניסיון של החברה<small>מחירים ממכרזים קודמים</small></h4>
+        <div class="bars">
+          <div class="bar-l"><span>היום</span><div class="track"><div class="fill man" style="--w:22%"></div><span class="tl">בראש של אדם אחד</span></div></div>
+          <div class="bar-l"><span>עם Meetek</span><div class="track"><div class="fill ai" style="--w:62%"></div><span class="tl">שמור בחברה, זמין לכל הצוות</span></div></div>
+        </div>
+      </div>
+    </div>
+    <p class="ba-foot">זו המחשה ולא מדידה. בשיחה נבין יחד איך זה נראה אצלכם.</p>
+  </div>
+</section>
+
+<section class="process wrap" id="process">
+  <div class="sec-head">
+    <h2 class="h-lg rv">איך עובדים איתנו</h2>
+    <p class="lead rv d1">מתחילים מהתהליך שעולה לכם הכי הרבה זמן, בונים אותו על הנתונים שלכם, ומרחיבים לשאר המחלקות.</p>
+  </div>
+  <ol class="steps" id="steps">
+    <span class="rail" id="rail" aria-hidden="true"></span>
+    <li class="step"><span class="dot">1</span><div><h3>שיחת אבחון, 30 דקות, חינם</h3><p>עוברים יחד על העבודה במשרד: מכרזים, רכש, שטח, חשבונות ודיווח. בסוף השיחה תדעו אילו תהליכים אצלכם אפשר להפוך לאוטומטיים, ומה כדאי לבנות קודם.</p></div></li>
+    <li class="step"><span class="dot">2</span><div><h3>סודיות ומיפוי</h3><p>חותמים על הסכם סודיות, ורק אז רואים מסמכים. יושבים עם האנשים שעושים את העבודה, ובוחרים יחד מאיפה מתחילים.</p></div></li>
+    <li class="step"><span class="dot">3</span><div><h3>גרסה ראשונה על הנתונים שלכם</h3><p>בונים גרסה ראשונה ומריצים אותה על עבודה שכבר עשיתם, כמו מכרז שתמחרתם או חודש של חשבוניות. משווים יחד את התוצאה.</p></div></li>
+    <li class="step"><span class="dot">4</span><div><h3>בנייה, הדרכה, והתהליך הבא</h3><p>משלימים את הכלי, מדריכים את הצוות ומלווים את השימוש הראשון. אחר כך עוברים לתהליך הבא ברשימה.</p></div></li>
+  </ol>
+  <div class="proc-cta rv">
+    <p>רוצים לדעת מה אפשר לבנות אצלכם? שיחת אבחון של 30 דקות, חינם.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-dark" href="#contact">קבעו שיחה</a><a class="btn btn-ghost" href="https://wa.me/972584001054" target="_blank" rel="noopener">וואטסאפ</a></div>
+  </div>
+</section>
+
+<section class="why wrap" id="why">
+  <div class="sec-head">
+    <h2 class="h-lg rv">למה לעבוד איתנו</h2>
+    <p class="lead rv d1">אנחנו מכירים את העבודה של חברות בנייה ותשתיות, ובונים כל כלי סביב החברה הספציפית.</p>
+  </div>
+  <div class="bento">
+    <div class="b b1 rv">
       <div>
-        <blockquote><p>"התחלתי לעבוד בחברת תשתיות ומצאתי מהנדסים מצוינים שמבזבזים שעות על עבודה ידנית: הכול עובר בין כמה ידיים עד שמסמך אחד יוצא. בניתי להם מערכת, ותהליך שלקח ימים לוקח היום דקות.</p><p>אז הבנתי שיש מאות חברות כאלה. ומהצד השני יש סטודנטים מצוינים בטכניון שמחפשים בדיוק אתגר כזה. Meetek מחברת בין השניים."</p></blockquote>
-        <cite><span class="avatar" aria-hidden="true">נ</span><span><b>נועם בן זמרה</b>מנכ"ל ומייסד שותף, Meetek</span></cite>
+        <h3>ההחלטה תמיד אצלכם</h3>
+        <p>שום מחיר לא נשלח, שום חשבונית לא מאושרת ושום מכרז לא מוגש בלי אישור של מישהו אצלכם. הכלים מכינים את העבודה ומסמנים כל דבר שצריך לבדוק.</p>
       </div>
+      <div class="human" aria-hidden="true">
+        <div class="tg">
+          <div><span>תא בקרה, מידה חריגה</span><span><button class="y" tabindex="-1">אישור</button><button tabindex="-1">עריכה</button></span></div>
+          <div><span>תקן ISO 9001, תוקף</span><span><button class="y" tabindex="-1">אישור</button><button tabindex="-1">עריכה</button></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="b b2 rv d1">
+      <div class="lock"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="8" y="16" width="20" height="14" rx="3"/><path d="M12.5 16v-4a5.5 5.5 0 0111 0v4M18 22v3"/></svg></div>
+      <div><h3>המידע שלכם נשאר שלכם</h3><p>חותמים על סודיות לפני שרואים מסמך אחד. המידע משמש רק לכלים של החברה שלכם.</p></div>
+    </div>
+    <div class="b b3 rv">
+      <div class="files" aria-hidden="true" style="gap:6px">
+        <span class="chip" style="font-family:var(--mono)">51 סלילה</span><span class="chip" style="font-family:var(--mono)">57 מים וביוב</span><span class="chip" style="font-family:var(--mono)">08 חשמל</span><span class="chip" style="font-family:var(--mono)">02 בטון</span><span class="chip" style="font-family:var(--mono)">40 פיתוח</span>
+      </div>
+      <div><h3>מכירים את התחום</h3><p>כתבי כמויות, פרקים וסעיפים, חשבונות חלקיים, תעודות משלוח וקבצי SKN. לא צריך להסביר לנו את הבסיס.</p></div>
+    </div>
+    <div class="b b4 rv d1">
+      <div class="files" aria-hidden="true">
+        <span class="file x"><span class="bars-i"></span>XLSX</span>
+        <span class="file pdf"><span class="bars-i"></span>PDF</span>
+        <span class="file skn"><span class="bars-i"></span>SKN</span>
+        <span class="file dwg"><span class="bars-i"></span>DOCX</span>
+      </div>
+      <div><h3>עובד עם הקבצים שכבר יש לכם</h3><p>הכלים מקבלים אקסל, PDF וקבצי מכרז, ומחזירים תוצאה באותו פורמט. הצוות לא צריך ללמוד מערכת חדשה, ויש לו כתובת ישירה אצלנו.</p></div>
     </div>
   </div>
 </section>
 
-<section class="block" id="students" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 4.5a3 3 0 0 1 0 6M18 14a5.5 5.5 0 0 1 3 6"/></svg>הסטודנטים</span>
-      <h2>לא כל סטודנט. <span class="grad-text">הסטודנט הנכון.</span></h2>
+<section class="about wrap" id="about">
+  <div class="about-in">
+    <h2 class="h-lg rv">הצוות</h2>
+    <p class="lead rv d1">שני מייסדים, מהנדסי נתונים מהטכניון, שמכירים מקרוב את העבודה בשטח.</p>
+    <div class="founders">
+      <article class="founder rv">
+        <div class="f-top">
+          <img class="f-av f-photo" src="img/noam.jpg" alt="נועם בן זמרה" width="72" height="72">
+          <div><h3>נועם בן זמרה</h3><span class="f-role">מנכ״ל ומייסד שותף</span></div>
+        </div>
+        <ul class="f-facts">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z"/></svg>שירת במגלן</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 15l6-10 6 10M7 11h6"/></svg>רס״ם במילואים</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 8l8-4 8 4-8 4z"/><path d="M5.5 9.7V13c0 1.3 2 2.5 4.5 2.5s4.5-1.2 4.5-2.5V9.7"/></svg>מהנדס נתונים מהטכניון</li>
+        </ul>
+      </article>
+      <article class="founder rv d1">
+        <div class="f-top">
+          <span class="f-av f-av2" aria-hidden="true">מ</span>
+          <div><h3>מעיין ימין</h3><span class="f-role">CTO ומייסד שותף</span></div>
+        </div>
+        <ul class="f-facts">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.6-6 8-3.4-1.4-6-4-6-8V5z"/></svg>שירת ב-8200</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 8l8-4 8 4-8 4z"/><path d="M5.5 9.7V13c0 1.3 2 2.5 4.5 2.5s4.5-1.2 4.5-2.5V9.7"/></svg>מהנדס נתונים מהטכניון</li>
+        </ul>
+      </article>
     </div>
-    <div class="students">
-      <div class="panel reveal">
-        <h3>מי הם</h3>
-        <p>סטודנטים להנדסה ולמדעי המחשב בטכניון, מ-15% המצטיינים ביותר, אחרי ראיון אישי. אנחנו מחפשים שילוב נדיר: יכולת טכנית גבוהה, סבלנות להבין איך עסק עובד באמת, ויכולת לדבר עם אנשים שלא באים מעולם ההייטק.</p>
-      </div>
-      <div class="panel reveal">
-        <h3>מה זה אומר בשבילכם</h3>
-        <ul><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אנחנו עושים בשבילכם את כל תהליך הגיוס: מיון, ראיונות והתאמה. אתם פוגשים רק מועמדים שמתאימים.</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>הסטודנט עובד אצלכם, בדרך כלל 3 ימים בשבוע, ומכיר את האנשים ואת המערכות מבפנים.</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>אין התחייבות לתקופת העסקה מינימלית. המטרה שלנו היא שהוא יישאר אצלכם לפחות עד סוף התואר.</li><li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>ההתחייבות שלנו: לא ראיתם תוצאה בחודש הראשון? לא משלמים לנו עליו. והסטודנט לא מתאים? מחליפים אותו בלי עלות נוספת.</li></ul>
-      </div>
+    <div class="story rv">
+      <h3>איך זה התחיל</h3>
+      <p>התחלנו בחברת תשתיות. היה שם תהליך שעבר בין כמה אנשים, וכל טעות החזירה אותו להתחלה. בנינו מערכת, ומה שלקח ימים התחיל לקחת דקות. משם הקמנו את Meetek, כדי לבנות כלים כאלה לעוד קבלנים וחברות בנייה, הנדסה ותשתיות. היום אנחנו עובדים עם קבלן תשתיות מוביל על כלי למכרזים.</p>
     </div>
   </div>
 </section>
 
-<section class="block" id="faq" style="padding-top:0">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>שאלות נפוצות</span>
-      <h2>מה ששואלים אותנו <span class="grad-text">בפגישה הראשונה</span></h2>
+<section class="faq wrap" id="faq">
+  <div class="faq-in">
+    <h2 class="h-lg rv">שאלות נפוצות</h2>
+    <div class="rv d1">
+      <details open><summary>אילו תהליכים אפשר לשפר אצלנו?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v10M2 7h10"/></svg></span></summary><div class="ans">כמעט כל עבודה שחוזרת על עצמה ומבוססת על מסמכים: מכרזים ותמחור, בדיקת חשבוניות ורכש, תעודות משלוח ודוחות שטח, דוחות להנהלה וחשבונות. בשיחה הראשונה נבין יחד מה הכי שווה אצלכם.</div></details>
+      <details><summary>ומה אם הכלי טועה?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v10M2 7h10"/></svg></span></summary><div class="ans">הכלים לא מחליטים לבד. כל תוצאה מגיעה עם המקור שלה, ומה שהכלי לא בטוח בו מסומן לבדיקה של איש מקצוע אצלכם. מה שיוצא מהחברה הוא תמיד מה שאדם אצלכם אישר.</div></details>
+      <details><summary>מה קורה עם המידע של החברה?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v10M2 7h10"/></svg></span></summary><div class="ans">חותמים על הסכם סודיות לפני שאנחנו רואים מסמך אחד. המידע נשאר בבעלותכם ומשמש רק לבניית הכלי שלכם.</div></details>
+      <details><summary>למה לא לקנות תוכנה מוכנה?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v10M2 7h10"/></svg></span></summary><div class="ans">תוכנת מדף בנויה לחברה ממוצעת, ואתם צריכים להתאים את עצמכם אליה. אנחנו בונים כל כלי סביב הנתונים והשיטה של החברה שלכם, ומחברים אותו למה שכבר יש לכם.</div></details>
+      <details><summary>הצוות שלנו יצטרך ללמוד תוכנה חדשה?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v10M2 7h10"/></svg></span></summary><div class="ans">לא. הכלים מקבלים את המסמכים כמו שהם, ומחזירים תוצאה באקסל או בפורמט שאתם כבר עובדים איתו. אנחנו גם מלמדים את הצוות ומלווים את השימוש הראשון.</div></details>
+      <details><summary>מה קורה בשיחה הראשונה?<span class="pm"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2v10M2 7h10"/></svg></span></summary><div class="ans">30 דקות בטלפון או בזום. עוברים על העבודה במשרד, ובסוף השיחה אתם יודעים אילו תהליכים אפשר להפוך לאוטומטיים ומה כדאי לבנות קודם. השיחה חינם ובלי התחייבות.</div></details>
     </div>
-    <div class="faq reveal"><details><summary>כמה זה עולה?</summary><p>הסטודנט מועסק אצלכם, ואת השכר שלו אתם קובעים איתו. דמי ההשמה שלנו נגזרים משעות העבודה שלו, רק בשנה הראשונה, בלי דמי הצטרפות ובלי התחייבות לתקופה מינימלית. נפרט בפגישת ההיכרות.</p></details><details><summary>ומה אם זה לא עובד?</summary><p>לא ראיתם תוצאה בחודש הראשון? לא משלמים לנו עליו. ואם הסטודנט לא מתאים, מחליפים אותו בלי עלות נוספת.</p></details><details><summary>ניסינו AI וזה לא עבד. למה שהפעם זה יהיה אחרת?</summary><p>כי הפעם יש מישהו שיושב אצלכם. כלי AI לבד לא יודעים איך נראה כתב הכמויות שלכם, איפה נשמרים המסמכים, או מי צריך לאשר מה. הסטודנט לומד את זה מבפנים, ובונה את הכלים סביב העבודה האמיתית שלכם.</p></details><details><summary>למה סטודנט ולא מהנדס בכיר?</summary><p>כי מה שצריך כאן הוא מישהו חד, סקרן וזמין, שיושב אצלכם שלושה ימים בשבוע ולומד את העסק. אנחנו בוחרים רק מ-15% העליונים בטכניון, וכל סטודנט עובר אצלנו ראיון אישי.</p></details><details><summary>מה לגבי סודיות המידע שלנו?</summary><p>לפני תחילת העבודה חותמים על הסכם סודיות. הסטודנט עובד רק על המערכות והמסמכים שתאשרו לו.</p></details><details><summary>צריך מחלקת IT או מערכות חדשות?</summary><p>לא. הסטודנט עובד מעל מה שכבר יש לכם: אקסל, Priority, חשבשבת, מייל ותיקיות משותפות.</p></details><details><summary>ומה עם הלימודים? הוא לא יתחלף כל כמה חודשים?</summary><p>אנחנו מתאימים את היקף המשרה לדרישות שלכם, וברוב המקרים סטודנט עובד כ-3 ימים בשבוע לצד התואר. המטרה היא שהסטודנט שנתאים לכם יישאר אצלכם לפחות עד סוף התואר, ואם שני הצדדים מרוצים, גם אחרי זה.</p></details></div>
   </div>
 </section>
 
-<section class="block" style="padding-top:0">
-  <div class="wrap">
-    <div class="contact reveal" id="contact">
-      <div>
-        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>בואו נדבר</span>
-        <h2>חצי שעה, ותדעו איפה הולך לכם הזמן</h2>
-        <p class="lead">פגישת היכרות ללא עלות, אצלכם במשרד או בטלפון. נבין איך אתם עובדים היום, ונגיד לכם איפה אפשר לחסוך הכי הרבה.</p>
-      </div>
+<section class="contact" id="contact">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap contact-in">
+    <div>
+      <h2 class="h-xl">בואו נדבר</h2>
+      <p class="lead">שיחת אבחון של 30 דקות, חינם. ספרו לנו מה לוקח הכי הרבה זמן אצלכם, ונראה לכם מה אפשר לבנות.</p>
       <div class="contact-list">
-        <a href="tel:+972584001054"><span><small>טלפון</small><strong>058-4001054</strong></span><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span></a>
-        <a href="https://wa.me/972584001054?text=%D7%94%D7%99%D7%99%20%D7%A0%D7%95%D7%A2%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20Meetek" target="_blank" rel="noopener"><span><small>וואטסאפ</small><strong>שלחו הודעה</strong></span><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg></span></a>
-        <a href="mailto:noam@meetek.ai?subject=%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%94%D7%99%D7%9B%D7%A8%D7%95%D7%AA%20%D7%A2%D7%9D%20Meetek"><span><small>מייל</small><strong>noam@meetek.ai</strong></span><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a>
+        <a href="tel:0584001054"><span dir="ltr">058-4001054</span><span class="mono">טלפון</span></a>
+        <a href="https://wa.me/972584001054" target="_blank" rel="noopener"><span>הודעה בוואטסאפ</span><span class="mono">וואטסאפ</span></a>
       </div>
     </div>
-    <div class="join reveal">
-      <p><b>סטודנטים בטכניון?</b> מחפשים עבודה אמיתית עם השפעה, בחברות שבאמת צריכות אתכם? שלחו לנו קורות חיים.</p>
-      <a class="btn btn-ghost" href="mailto:noam@meetek.ai?subject=%D7%9E%D7%95%D7%A2%D7%9E%D7%93%D7%95%D7%AA%20%D7%9C-Meetek">להגשת מועמדות</a>
-    </div>
+    <form class="f" id="cform" novalidate>
+      <div class="row2">
+        <label>שם מלא<input name="name" autocomplete="name" required></label>
+        <label>חברה<input name="company" autocomplete="organization" required></label>
+      </div>
+      <label>טלפון<input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
+      <label>במה תרצו להתחיל?
+        <select name="topic">
+          <option>מכרזים ותמחור</option>
+          <option>רכש וחשבוניות</option>
+          <option>דוחות ביצוע ושטח</option>
+          <option>חשבונות לקוח</option>
+          <option>מסמכים ותוכניות</option>
+          <option>דיווח להנהלה</option>
+          <option>עוד לא יודעים, תעזרו לנו</option>
+        </select>
+      </label>
+      <button class="btn btn-light" type="submit">קבעו שיחת אבחון <span class="arr" aria-hidden="true">←</span></button>
+      <small>הפרטים נשלחים אלינו בוואטסאפ, ונחזור אליכם תוך יום עסקים.</small>
+      <div class="f-ok" id="fok">תודה. אם הוואטסאפ לא נפתח, התקשרו אלינו: 058-4001054.</div>
+    </form>
   </div>
+  <footer class="ft">
+    <div class="wrap">
+      <div class="ft-in">
+        <div style="display:flex;flex-direction:column;gap:12px;max-width:320px">
+          <span class="logo" style="--logo-ink:#0A0A0A"><svg class="logo-mark" viewBox="0 0 30 22" aria-hidden="true"><circle cx="10" cy="11" r="8.6" fill="none" stroke="currentColor" stroke-width="2.6"/><circle cx="20" cy="11" r="8.6" fill="none" stroke="#2F6BFF" stroke-width="2.6"/></svg>Meetek</span>
+          <span style="font-size:14px;color:#8A8A8A">סוכנות AI לקבלנים, חברות בנייה, הנדסה ותשתיות.</span>
+        </div>
+        <div class="ft-cols">
+          <div><span class="mono">באתר</span><a href="#services">מה אנחנו עושים</a><a href="#demo">דוגמאות</a><a href="#process">איך עובדים</a><a href="#about">הצוות</a><a href="#faq">שאלות</a></div>
+          <div><span class="mono">יצירת קשר</span><a href="tel:0584001054" dir="ltr">058-4001054</a><a href="https://wa.me/972584001054" target="_blank" rel="noopener">וואטסאפ</a><a href="#contact">קבעו שיחה</a></div>
+        </div>
+      </div>
+      
+      <div class="legal"><span>© 2026 Meetek</span><span style="font-size:11px">3D: “CHMIL Mannequin Bust 2024” by CHMIL Studio, “Hard hat” by Naira (CC BY 4.0)</span><span dir="ltr">meetek.ai</span></div>
+    </div>
+  </footer>
 </section>
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="Meetek"><svg width="34" height="24" viewBox="0 0 30 22" aria-hidden="true"><circle class="c1" cx="10" cy="11" r="8.6" fill="none" stroke-width="2.6"/><circle class="c2" cx="20" cy="11" r="8.6" fill="none" stroke-width="2.6"/></svg>Meetek</a>
-    <span>הטמעת AI בחברות הנדסה, ביצוע ותשתיות · <a href="mailto:noam@meetek.ai">noam@meetek.ai</a></span>
-    <span>© <span id="y">2026</span> Meetek · <a href="en/" lang="en">English</a></span>
-  </div>
-</footer>
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var darkSecs=[].slice.call(document.querySelectorAll('.h3d,.hero,.ba,.contact'));
+  function onScroll(){
+    var y=window.scrollY,probe=nav.offsetHeight/2;
+    var dark=darkSecs.some(function(sec){var r=sec.getBoundingClientRect();return r.top<=probe&&r.bottom>=probe});
+    nav.classList.toggle('solid',!dark);
+    nav.classList.toggle('night',dark&&y>40);
+    nav.style.setProperty('--logo-ink',dark?'#0A0A0A':'#FFFFFF');
+    stmt();rail();
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
 
-<script src="site.js"></script>
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.18,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv,.ba-row,#app').forEach(function(el){io.observe(el)});
+  function revealVisible(){document.querySelectorAll('.rv:not(.in),.ba-row:not(.in),#app:not(.in)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0)el.classList.add('in')})}
+  requestAnimationFrame(function(){requestAnimationFrame(revealVisible)});
+  setTimeout(function(){document.querySelectorAll('.hero .rv,#app').forEach(function(el){el.classList.add('in')})},1200);
+
+  var p=document.getElementById('stmt');
+  p.innerHTML=p.textContent.split(' ').map(function(w){return '<span class="w">'+w+'</span>'}).join(' ');
+  var ws=p.querySelectorAll('.w');
+  function stmt(){
+    var r=p.getBoundingClientRect(),vh=window.innerHeight;
+    var prog=Math.min(1,Math.max(0,(vh*0.85-r.top)/(r.height+vh*0.35)));
+    var n=Math.round(prog*ws.length);
+    ws.forEach(function(w,i){w.classList.toggle('on',i<n)});
+  }
+
+  var steps=document.querySelectorAll('.step'),railEl=document.getElementById('rail'),ol=document.getElementById('steps');
+  function rail(){
+    var r=ol.getBoundingClientRect(),vh=window.innerHeight;
+    var h=Math.min(r.height-24,Math.max(0,vh*0.55-r.top));
+    railEl.style.height=h+'px';
+    steps.forEach(function(s){s.classList.toggle('on',s.getBoundingClientRect().top<vh*0.55)});
+  }
+
+  var tabs=[].slice.call(document.querySelectorAll('.tab')),timer,cur=0,user=false;
+  function sel(i){
+    cur=i;
+    tabs.forEach(function(t,j){
+      var on=j===i;t.setAttribute('aria-selected',on);
+      var pn=document.getElementById(t.getAttribute('aria-controls'));
+      pn.hidden=!on;pn.classList.toggle('on',on);
+      var bar=t.querySelector('.tbar i');bar.style.animation='none';bar.offsetWidth;bar.style.animation='';
+      if(user)bar.style.animation='none';
+    });
+  }
+  function auto(){clearInterval(timer);if(!user)timer=setInterval(function(){sel((cur+1)%tabs.length)},7000)}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){user=true;clearInterval(timer);sel(i)});
+    t.addEventListener('keydown',function(e){
+      if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();user=true;clearInterval(timer);var d=(e.key==='ArrowLeft')?1:-1;var n=(i+d+tabs.length)%tabs.length;sel(n);tabs[n].focus();}
+    });
+  });
+  var toolsIO=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)auto();else clearInterval(timer)})},{threshold:.3});
+  if(document.getElementById('tools'))toolsIO.observe(document.getElementById('tools'));
+
+
+  document.getElementById('cform').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target,ok=true;
+    f.querySelectorAll('input[required]').forEach(function(i){if(!i.value.trim()){ok=false;i.style.borderColor='#B42318'}else{i.style.borderColor=''}});
+    if(!ok)return;
+    var msg='היי Meetek, אשמח לשיחת אבחון.\nשם: '+f.elements['name'].value.trim()+'\nחברה: '+f.elements['company'].value.trim()+'\nטלפון: '+f.elements['phone'].value.trim()+'\nתחום: '+f.elements['topic'].value;
+    window.open('https://wa.me/972584001054?text='+encodeURIComponent(msg),'_blank','noopener');
+    [].slice.call(f.children).forEach(function(c){if(c.id!=='fok')c.style.display='none'});
+    document.getElementById('fok').style.display='block';
+  });
+
+  onScroll();
+})();
+</script>
+<script>
+(function(){
+  var road=document.getElementById('road'); if(!road) return;
+  var steps=[].slice.call(road.querySelectorAll('.road-step'));
+  var fill=road.querySelector('.road-fill');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function tick(){
+    var r=road.getBoundingClientRect(), vh=window.innerHeight, mark=vh*0.6;
+    var p=(mark-r.top)/r.height; p=Math.max(0,Math.min(1,p));
+    if(reduce) p=1;
+    fill.style.height=(p*100).toFixed(1)+'%';
+    steps.forEach(function(st){
+      var t=st.getBoundingClientRect().top+14;
+      st.classList.toggle('on', reduce || t<mark);
+    });
+  }
+  var q=false;
+  function onScroll(){ if(!q){ q=true; requestAnimationFrame(function(){ q=false; tick(); }); } }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  tick();
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/geometries/DecalGeometry.js"></script>
+<script>
+(function(){
+  var Q=new URLSearchParams(location.search);window.DBG=Q;
+  var stage=document.getElementById('stage3d');if(!stage)return;
+  var W=stage.clientWidth,H=stage.clientHeight;
+  var renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(W,H);
+  renderer.outputEncoding=THREE.sRGBEncoding;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1;
+  stage.appendChild(renderer.domElement);
+  var scene=new THREE.Scene();
+  var cam=new THREE.PerspectiveCamera(28,W/H,.1,100);
+  function frame(){cam.aspect=W/H;var narrow=W/H<1;cam.position.set(0,.2,narrow?15:10.8);cam.lookAt(0,-.55,0);cam.updateProjectionMatrix();}
+  frame();
+  var envScene=new THREE.Scene();
+  envScene.add(new THREE.Mesh(new THREE.SphereGeometry(20,32,16),new THREE.MeshBasicMaterial({color:0x151515,side:THREE.BackSide})));
+  function panel(w,h,x,y,z,c){var m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:c,side:THREE.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);envScene.add(m);}
+  panel(12,5,-7,9,5,0xffffff);panel(6,10,9,2,-3,0xbfcfff);panel(16,2,0,-7,7,0x555555);
+  scene.environment=new THREE.PMREMGenerator(renderer).fromScene(envScene,.04).texture;
+  var key=new THREE.DirectionalLight(0xffffff,1.5);key.position.set(-5,7,4);scene.add(key);
+  var rimL=new THREE.DirectionalLight(0x9db6ff,1.1);rimL.position.set(-6,1,-5);scene.add(rimL);
+  var rimR=new THREE.DirectionalLight(0xffffff,.7);rimR.position.set(6,2,-4);scene.add(rimR);
+  scene.add(new THREE.AmbientLight(0xffffff,.05));
+  var lin=function(h){return new THREE.Color(h).convertSRGBToLinear();};
+
+  var root=new THREE.Group();scene.add(root);
+  var bust=new THREE.Group();root.add(bust);
+  var head=new THREE.Group();bust.add(head);
+  var hatPivot=new THREE.Group();head.add(hatPivot);
+  var loader=new THREE.GLTFLoader();
+
+  /* bake a gltf scene into one normalized group: height = h, base at y=0 */
+  function normalize(obj,h){obj.updateMatrixWorld(true);var b=new THREE.Box3().setFromObject(obj);var s=b.getSize(new THREE.Vector3()),c=b.getCenter(new THREE.Vector3());var k=h/s.y;var g=new THREE.Group();obj.position.sub(c);g.add(obj);g.scale.setScalar(k);g.position.y=s.y*k/2;var w=new THREE.Group();w.add(g);return {grp:w,size:s.clone().multiplyScalar(k)};}
+
+  /* fuller, more masculine cheeks and jaw: push face vertices outward */
+  function masculinize(mesh){
+    var g=mesh.geometry.clone();g.applyMatrix4(mesh.matrixWorld);mesh.geometry=g;mesh.position.set(0,0,0);mesh.rotation.set(0,0,0);mesh.scale.set(1,1,1);mesh.updateMatrix();
+    g.computeBoundingBox();var bb=g.boundingBox,hgt=bb.max.y-bb.min.y,cx=(bb.max.x+bb.min.x)/2,cz=(bb.max.z+bb.min.z)/2;
+    var p=g.attributes.position,v=new THREE.Vector3();
+    var yC=bb.min.y+hgt*.66, sy=hgt*.085, top=bb.min.y+hgt*.8, chin=bb.min.y+hgt*.55;
+    for(var i=0;i<p.count;i++){v.fromBufferAttribute(p,i);
+      var dy=(v.y-yC)/sy, wy=Math.exp(-dy*dy*.5);
+      if(v.y<chin-hgt*.04||v.y>top) wy*=0;
+      var dx=v.x-cx, dz=v.z-cz;
+      var front=Math.max(0,Math.min(1,(dz/(bb.max.z-cz))*1.4+.2));
+      var side=Math.min(1,Math.abs(dx)/((bb.max.x-cx)*.35));
+      var w=wy*front*side;
+      v.x=cx+dx*(1+.16*w); v.z=cz+dz*(1+.05*w);
+      var jw=Math.exp(-Math.pow((v.y-(chin+hgt*.03))/(hgt*.04),2)*.5)*front;
+      v.x=cx+(v.x-cx)*(1+.08*jw);
+      p.setXYZ(i,v.x,v.y,v.z);}
+    p.needsUpdate=true;g.computeVertexNormals();
+  }
+
+  var skin=new THREE.MeshPhysicalMaterial({color:lin(0x141414),roughness:.62,metalness:0,clearcoat:.15,clearcoatRoughness:.6,envMapIntensity:.35});
+  var headTopY=0,headW=0;
+  loader.load('models/bust/scene.gltf',function(gl){
+    gl.scene.updateMatrixWorld(true);
+    gl.scene.traverse(function(o){if(o.isMesh){if(Q.has('cheeks'))masculinize(o);o.material=skin;window.__bustMesh=o;}});
+    var n=normalize(gl.scene,3.2);bust.add(n.grp);n.grp.position.y=-2.1;
+    headTopY=-2.1+3.2; headW=n.size.x;
+    bust.updateMatrixWorld(true);var bm=window.__bustMesh,pp=bm.geometry.attributes.position,vv=new THREE.Vector3(),ys=[];
+    for(var i=0;i<pp.count;i++){vv.fromBufferAttribute(pp,i).applyMatrix4(bm.matrixWorld);bust.worldToLocal(vv);ys.push([vv.y,vv.x,vv.z]);}
+    ys.sort(function(a,b){return b[0]-a[0];});var top=ys[0][0],sx=0,sz=0,n2=0,minX=1e9,maxX=-1e9,minZ=1e9,maxZ=-1e9;
+    for(var q=0;q<ys.length;q++){var e=ys[q];if(e[0]<top-.55)continue;sx+=e[1];sz+=e[2];n2++;}
+    window.__crown={y:top,x:sx/n2,z:sz/n2};
+    for(var q2=0;q2<ys.length;q2++){var e2=ys[q2];if(Math.abs(e2[0]-(top-.45))<.03){minX=Math.min(minX,e2[1]);maxX=Math.max(maxX,e2[1]);minZ=Math.min(minZ,e2[2]);maxZ=Math.max(maxZ,e2[2]);}}
+    window.__skull={w:maxX-minX,d:maxZ-minZ};headTopY=top;headW=maxX-minX;
+    window.__bust=n.size;
+    if(window.__hatReady) placeHat();
+  });
+
+  var plastic,hatObj,hatSize;
+  loader.load('models/hat/scene.gltf',function(gl){
+    gl.scene.traverse(function(o){if(o.isMesh){
+      var m=o.material;var normal=m.normalMap||null;
+      if(m.name==='blinn2SG'){o.material=new THREE.MeshPhysicalMaterial({color:lin(0x2F6BFF),roughness:.4,metalness:0,clearcoat:.9,clearcoatRoughness:.28,envMapIntensity:.55,normalMap:normal,normalScale:new THREE.Vector2(.35,.35)});plastic=o;}
+      else{o.material=new THREE.MeshStandardMaterial({color:lin(0x1c1c1c),roughness:.7});}
+    }});
+    var n=normalize(gl.scene,1);hatObj=n.grp;hatSize=n.size;hatObj.rotation.y=Q.has('hr')?+Q.get('hr'):0;
+    window.__hatReady=true;window.__hatPlastic=plastic;window.__hatObj=hatObj;window.__THREE=THREE; if(headW) placeHat();
+  });
+
+  function placeHat(){
+    var k=(window.__skull.w*1.56)/hatSize.x;
+    hatObj.scale.setScalar(k);hatPivot.add(hatObj);
+    hatPivot.position.set(__crown.x,headTopY-hatSize.y*k*(Q.has('hy')?+Q.get('hy'):.66),__crown.z);
+    hatPivot.rotation.x=-.08;
+    /* our logo on the front of the shell */
+    if(plastic&&THREE.DecalGeometry){
+      var saveR=bust.rotation.y,saveX=bust.rotation.x;bust.rotation.set(0,0,0);root.updateMatrixWorld(true);hatPivot.updateMatrixWorld(true);
+      var hp=new THREE.Vector3();hatPivot.getWorldPosition(hp);
+      var rc=new THREE.Raycaster(new THREE.Vector3(hp.x,hp.y+hatSize.y*k*.72,hp.z+8),new THREE.Vector3(0,0,-1));
+      var hit=rc.intersectObject(plastic,true)[0];
+      if(hit){
+        var c=document.createElement('canvas');c.width=512;c.height=512;var g=c.getContext('2d');
+        g.lineWidth=46;g.strokeStyle='#0d0d0d';g.beginPath();g.arc(190,256,100,0,Math.PI*2);g.stroke();g.beginPath();g.arc(322,256,100,0,Math.PI*2);g.stroke();
+        var tex=new THREE.CanvasTexture(c);tex.encoding=THREE.sRGBEncoding;tex.anisotropy=8;
+        var size=headW*.36;
+        var dg=new THREE.DecalGeometry(plastic,hit.point,new THREE.Euler(0,0,0),new THREE.Vector3(size,size,size*.35));
+        var dm=new THREE.Mesh(dg,new THREE.MeshPhysicalMaterial({map:tex,transparent:true,roughness:.5,clearcoat:.5,depthTest:true,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-4}));
+        var inv=new THREE.Matrix4().copy(plastic.matrixWorld).invert();dm.applyMatrix4(inv);plastic.add(dm);
+      }
+      bust.rotation.y=saveR;bust.rotation.x=saveX;
+    }
+  }
+
+  var mx=0,my=0,tx=0,ty=0,sp=0;
+  addEventListener('pointermove',function(e){mx=e.clientX/innerWidth*2-1;my=e.clientY/innerHeight*2-1;});
+  addEventListener('scroll',function(){sp=Math.min(1,scrollY/innerHeight);},{passive:true});var vis=true;new IntersectionObserver(function(e){vis=e[0].isIntersecting;}).observe(stage);
+  addEventListener('resize',function(){W=stage.clientWidth;H=stage.clientHeight;renderer.setSize(W,H);frame();});
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var clock=new THREE.Clock();
+  (function loop(){
+    var t=clock.getElapsedTime();
+    tx+=(mx-tx)*.05;ty+=(my-ty)*.05;
+    var breathe=reduce?0:Math.sin(t*1.1)*.012;
+    bust.rotation.y=(Q.has('rot')?+Q.get('rot'):-.55)+(Q.has('still')?0:tx*.35+(reduce?0:Math.sin(t*.45)*.05))+sp*.6;
+    bust.rotation.x=ty*.08+sp*.15;
+    root.position.y=.15+breathe-sp*.5;root.position.x=(W/H>1.15)?-Math.min(1.25,(W/H-1)*1.1):0;
+    hatPivot.position.y=(headTopY&&hatSize?headTopY-hatSize.y*hatObj.scale.x*(Q.has('hy')?+Q.get('hy'):.66):0)+sp*1.1;
+    hatPivot.rotation.z=sp*.3;
+    if(vis)renderer.render(scene,cam);requestAnimationFrame(loop);
+  })();
+})();
+</script>
+<script>
+(function(){
+  var app=document.getElementById('app');if(!app)return;
+  var btns=[].slice.call(app.querySelectorAll('.side button[data-view]'));
+  var views=[].slice.call(app.querySelectorAll('.view'));
+  var meta={tenders:['מכרזים','מכרז לדוגמה 118/26','מוכן לבדיקה'],invoices:['רכש וחשבוניות','חשבונית 20417','2 חריגות'],field:['דוחות ביצוע','יומן 12.11','ממתין לאישור']};
+  var order=['tenders','invoices','field'],idx=0,timer=null,touched=false;
+  function show(k){views.forEach(function(v){v.hidden=v.getAttribute('data-view')!==k;});btns.forEach(function(b){var on=b.getAttribute('data-view')===k;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false');});
+    document.getElementById('crumbA').textContent=meta[k][0];document.getElementById('crumbB').textContent=meta[k][1];document.getElementById('liveTag').textContent=meta[k][2];idx=order.indexOf(k);}
+  btns.forEach(function(b){b.addEventListener('click',function(){touched=true;clearInterval(timer);show(b.getAttribute('data-view'));});});
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){new IntersectionObserver(function(e){if(e[0].isIntersecting&&!touched&&!timer){timer=setInterval(function(){show(order[(idx+1)%order.length]);},7000);}else if(!e[0].isIntersecting&&timer){clearInterval(timer);timer=null;}},{threshold:.4}).observe(app);}
+})();
+</script>
 </body>
 </html>
